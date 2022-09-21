@@ -13,6 +13,10 @@
 		89DC69EA28DB66EC00CA545D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DC69E828DB66EC00CA545D /* Main.storyboard */; };
 		89DC69EC28DB66EC00CA545D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DC69EB28DB66EC00CA545D /* Assets.xcassets */; };
 		89DC69EF28DB66EC00CA545D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DC69ED28DB66EC00CA545D /* LaunchScreen.storyboard */; };
+		89DC69F728DB755B00CA545D /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC69F628DB755B00CA545D /* TimelineViewController.swift */; };
+		89DC69F928DB757100CA545D /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC69F828DB757100CA545D /* ExploreViewController.swift */; };
+		89DC69FB28DB757300CA545D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC69FA28DB757300CA545D /* ActivityViewController.swift */; };
+		89DC69FD28DB757500CA545D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DC69FC28DB757500CA545D /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		89DC69EB28DB66EC00CA545D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89DC69EE28DB66EC00CA545D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89DC69F028DB66EC00CA545D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89DC69F628DB755B00CA545D /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		89DC69F828DB757100CA545D /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		89DC69FA28DB757300CA545D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		89DC69FC28DB757500CA545D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				89DC69E228DB66EC00CA545D /* AppDelegate.swift */,
 				89DC69E428DB66EC00CA545D /* SceneDelegate.swift */,
 				89DC69E628DB66EC00CA545D /* ViewController.swift */,
+				89DC69F628DB755B00CA545D /* TimelineViewController.swift */,
+				89DC69F828DB757100CA545D /* ExploreViewController.swift */,
+				89DC69FA28DB757300CA545D /* ActivityViewController.swift */,
+				89DC69FC28DB757500CA545D /* ProfileViewController.swift */,
 				89DC69E828DB66EC00CA545D /* Main.storyboard */,
 				89DC69EB28DB66EC00CA545D /* Assets.xcassets */,
 				89DC69ED28DB66EC00CA545D /* LaunchScreen.storyboard */,
@@ -140,6 +152,10 @@
 			files = (
 				89DC69E728DB66EC00CA545D /* ViewController.swift in Sources */,
 				89DC69E328DB66EC00CA545D /* AppDelegate.swift in Sources */,
+				89DC69FD28DB757500CA545D /* ProfileViewController.swift in Sources */,
+				89DC69F928DB757100CA545D /* ExploreViewController.swift in Sources */,
+				89DC69FB28DB757300CA545D /* ActivityViewController.swift in Sources */,
+				89DC69F728DB755B00CA545D /* TimelineViewController.swift in Sources */,
 				89DC69E528DB66EC00CA545D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

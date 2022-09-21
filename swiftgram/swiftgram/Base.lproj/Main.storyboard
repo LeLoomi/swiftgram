@@ -1,24 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O6n-rd-1lk">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="zpG-Zd-bet">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController id="O6n-rd-1lk" sceneMemberID="viewController">
+                    <tabBar key="tabBar" autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="t73-0V-GhN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.10980392160000001" green="0.12941176469999999" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="R05-kJ-i4l" kind="relationship" relationship="viewControllers" id="K9h-RK-d3C"/>
+                        <segue destination="rud-xq-8Vy" kind="relationship" relationship="viewControllers" id="UZ5-c6-LFI"/>
+                        <segue destination="lAf-sW-RuF" kind="relationship" relationship="viewControllers" id="3sD-H1-LBQ"/>
+                        <segue destination="QHd-nZ-E1f" kind="relationship" relationship="viewControllers" id="NUF-kO-upX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nSf-aY-8a0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="686" y="-338"/>
+        </scene>
+        <!--Timeline View Controller-->
+        <scene sceneID="I16-6d-Vbz">
+            <objects>
+                <viewController id="R05-kJ-i4l" customClass="TimelineViewController" customModule="swiftgram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yuD-zi-dE6">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="f3i-yf-2iy"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="feed" selectedImage="feed-bold" id="yrU-Q7-4Lq">
+                        <color key="badgeColor" name="AppBackground"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MbC-5u-U2v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-620" y="456"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="Jv4-Mf-9dA">
+            <objects>
+                <viewController id="QHd-nZ-E1f" customClass="ProfileViewController" customModule="swiftgram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u0j-9N-Zao">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lcH-6g-Gzd"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="user" selectedImage="user-bold" id="oat-s7-4s7">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llo-KY-jAk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991" y="456"/>
+        </scene>
+        <!--Activity View Controller-->
+        <scene sceneID="xDA-oK-GNz">
+            <objects>
+                <viewController id="lAf-sW-RuF" customClass="ActivityViewController" customModule="swiftgram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ei-6F-IKf">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TVp-s6-hEd"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="like" selectedImage="like-bold" id="ACI-35-Si2">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgy-Vm-zC8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="456"/>
+        </scene>
+        <!--Explore View Controller-->
+        <scene sceneID="lSM-uN-zdy">
+            <objects>
+                <viewController id="rud-xq-8Vy" customClass="ExploreViewController" customModule="swiftgram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vRk-zZ-zUI">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WWM-DL-Vk7"/>
+                        <color key="backgroundColor" name="AppBackground"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="search" selectedImage="search-bold" id="14i-vI-Hv8">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMS-mL-tWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="456"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="feed" width="48" height="48"/>
+        <image name="feed-bold" width="48" height="48"/>
+        <image name="like" width="48" height="48"/>
+        <image name="like-bold" width="48" height="48"/>
+        <image name="search" width="48" height="48"/>
+        <image name="search-bold" width="48" height="48"/>
+        <image name="user" width="48" height="48"/>
+        <image name="user-bold" width="48" height="48"/>
+        <namedColor name="AppBackground">
+            <color red="0.10980392156862745" green="0.12941176470588234" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
