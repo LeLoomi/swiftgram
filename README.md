@@ -2,4 +2,4 @@
 
 See the current frontend design goal over at [Figma](https://www.figma.com/proto/aojSAyqTbrkbcIo2SFdRvZ/Swiftgram).
 
-<sub>This project is purely educational. All content rights etc. remain with their respective holders.
+<sub>This project is purely educational. All content rights etc. remain with their respective holders. Big thanks to all creators over at [Pexels](www.pexels.com) whose free use content is used to mock up the designs.
