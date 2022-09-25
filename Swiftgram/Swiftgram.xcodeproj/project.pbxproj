@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0128E0A29100B68AB1 /* InteractionsView.swift */; };
+		898DEB0428E0A2E800B68AB1 /* OwnProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */; };
 		89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F53228E08E1A0009679A /* SwiftgramApp.swift */; };
 		89D8F53528E08E1A0009679A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F53428E08E1A0009679A /* ContentView.swift */; };
 		89D8F53728E08E1C0009679A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D8F53628E08E1C0009679A /* Assets.xcassets */; };
 		89D8F53A28E08E1C0009679A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D8F53928E08E1C0009679A /* Preview Assets.xcassets */; };
+		89D8F54128E09DD40009679A /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F54028E09DD40009679A /* FeedView.swift */; };
+		89D8F54928E0A1930009679A /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F54828E0A1930009679A /* DiscoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		898DEB0128E0A29100B68AB1 /* InteractionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionsView.swift; sourceTree = "<group>"; };
+		898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnProfileView.swift; sourceTree = "<group>"; };
 		89D8F52F28E08E1A0009679A /* Swiftgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D8F53228E08E1A0009679A /* SwiftgramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftgramApp.swift; sourceTree = "<group>"; };
 		89D8F53428E08E1A0009679A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89D8F53628E08E1C0009679A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89D8F53928E08E1C0009679A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89D8F54028E09DD40009679A /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		89D8F54828E0A1930009679A /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				89D8F53228E08E1A0009679A /* SwiftgramApp.swift */,
 				89D8F53428E08E1A0009679A /* ContentView.swift */,
+				89D8F54028E09DD40009679A /* FeedView.swift */,
+				89D8F54828E0A1930009679A /* DiscoverView.swift */,
+				898DEB0128E0A29100B68AB1 /* InteractionsView.swift */,
+				898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */,
 				89D8F53628E08E1C0009679A /* Assets.xcassets */,
 				89D8F53828E08E1C0009679A /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D8F53528E08E1A0009679A /* ContentView.swift in Sources */,
+				89D8F54128E09DD40009679A /* FeedView.swift in Sources */,
 				89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */,
+				898DEB0428E0A2E800B68AB1 /* OwnProfileView.swift in Sources */,
+				898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */,
+				89D8F54928E0A1930009679A /* DiscoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,21 +286,25 @@
 				DEVELOPMENT_TEAM = XB3KD3V58C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Swiftgram;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.LeLoomi.Swiftgram;
+				PRODUCT_BUNDLE_IDENTIFIER = de.LeLoomi.swiftgram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,21 +319,25 @@
 				DEVELOPMENT_TEAM = XB3KD3V58C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Swiftgram;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.LeLoomi.Swiftgram;
+				PRODUCT_BUNDLE_IDENTIFIER = de.LeLoomi.swiftgram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
