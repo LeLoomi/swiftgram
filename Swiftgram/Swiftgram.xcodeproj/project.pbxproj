@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CF81828E0BA69005E7585 /* ImagePost.swift */; };
 		898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0128E0A29100B68AB1 /* InteractionsView.swift */; };
 		898DEB0428E0A2E800B68AB1 /* OwnProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */; };
 		89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F53228E08E1A0009679A /* SwiftgramApp.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		892CF81828E0BA69005E7585 /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
 		898DEB0128E0A29100B68AB1 /* InteractionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionsView.swift; sourceTree = "<group>"; };
 		898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnProfileView.swift; sourceTree = "<group>"; };
 		89D8F52F28E08E1A0009679A /* Swiftgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +67,7 @@
 				89D8F54828E0A1930009679A /* DiscoverView.swift */,
 				898DEB0128E0A29100B68AB1 /* InteractionsView.swift */,
 				898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */,
+				892CF81828E0BA69005E7585 /* ImagePost.swift */,
 				89D8F53628E08E1C0009679A /* Assets.xcassets */,
 				89D8F53828E08E1C0009679A /* Preview Content */,
 			);
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */,
 				89D8F53528E08E1A0009679A /* ContentView.swift in Sources */,
 				89D8F54128E09DD40009679A /* FeedView.swift in Sources */,
 				89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */,
@@ -291,6 +295,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -324,6 +330,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -20,7 +20,7 @@ struct ContentView: View {
             ZStack {
                 switch navIndex {
                 case 0:
-                    FeedView()
+                    FeedView().clipped()
                 case 1:
                     DiscoverView()
                 case 2:
@@ -38,6 +38,7 @@ struct ContentView: View {
                 }
             }
             
+            
             //This HStack is our actual Navbar
             HStack {
                 ForEach(0..<5) { index in
@@ -49,19 +50,23 @@ struct ContentView: View {
                         if (index == 2) {
                             Image(systemName: tabIcons[index])
                                 .font(.system(size: 40, weight: .bold))
-                                .foregroundColor(.red)
+                                .foregroundColor(.orange)
                         }
                         else {
                             Image(systemName: tabIcons[index])
                                 .font(.system(size: 28))
                                 .foregroundColor(navIndex == index ?
-                                                 Color.black : Color.gray)
+                                                 Color("ContainerText") : Color.gray)
                         }
                         Spacer()
                     })
                 }
-            }
-        }
+                
+            }.padding(.horizontal, 15)
+            
+        }.background(Color("AppBackground")).foregroundColor(Color("ContainerText"))
+            .preferredColorScheme(.dark)
+        
     }
     
     

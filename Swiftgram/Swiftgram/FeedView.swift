@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct FeedView: View {
+        
+    var examplePost1 = ImagePost(content_id: "abc001", publisher_id: "dev-loomi")
+    
     var body: some View {
         ScrollView {
-            Text("Feed")
-            Text("Entry")
-            Text("Entry")
-        }
+            VStack(spacing: 0)
+            {
+                examplePost1.contentView
+                examplePost1.contentView
+                examplePost1.contentView
+            }
+        }.cornerRadius(15)
     }
 }
 
