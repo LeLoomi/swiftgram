@@ -9,15 +9,17 @@ import SwiftUI
 
 struct FeedView: View {
         
-    var examplePost1 = ImagePost(content_id: "abc001", publisher_id: "dev-loomi")
+    
     
     var body: some View {
         ScrollView {
             VStack(spacing: 0)
             {
-                examplePost1.contentView
-                examplePost1.contentView
-                examplePost1.contentView
+                ImagePost(publisherName: "Si Luan Pham",
+                          publisherAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg",
+                          imageUrl: "https://i.ibb.co/thp8tmS/temple.jpg",
+                          likeCount: 56
+                ).contentView
             }
         }.cornerRadius(15)
     }

@@ -64,7 +64,8 @@ struct ContentView: View {
                 
             }.padding(.horizontal, 15)
             
-        }.background(Color("AppBackground")).foregroundColor(Color("ContainerText"))
+        }.background(Color("AppBackground"))
+            .foregroundColor(Color("ContainerText"))
             .preferredColorScheme(.dark)
         
     }
