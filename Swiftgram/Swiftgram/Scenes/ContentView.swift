@@ -63,6 +63,8 @@ struct ContentView: View {
                 }
                 
             }.padding(.horizontal, 15)
+                .padding(.bottom, -15)
+                .padding(.top, 5)
             
         }.background(Color("AppBackground"))
             .foregroundColor(Color("ContainerText"))
