@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8921199028E448D100F20A6C /* PostgresClientKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8921198F28E448D100F20A6C /* PostgresClientKit */; };
+		8921199228E44FD900F20A6C /* LocationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199128E44FD900F20A6C /* LocationBox.swift */; };
+		8921199428E483AC00F20A6C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199328E483AC00F20A6C /* Comment.swift */; };
 		892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CF81828E0BA69005E7585 /* ImagePost.swift */; };
 		898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0128E0A29100B68AB1 /* InteractionsView.swift */; };
 		898DEB0428E0A2E800B68AB1 /* OwnProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */; };
@@ -20,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8921199128E44FD900F20A6C /* LocationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBox.swift; sourceTree = "<group>"; };
+		8921199328E483AC00F20A6C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		892CF81828E0BA69005E7585 /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
 		898DEB0128E0A29100B68AB1 /* InteractionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionsView.swift; sourceTree = "<group>"; };
 		898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnProfileView.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8921199028E448D100F20A6C /* PostgresClientKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				892CF81828E0BA69005E7585 /* ImagePost.swift */,
+				8921199128E44FD900F20A6C /* LocationBox.swift */,
+				8921199328E483AC00F20A6C /* Comment.swift */,
 			);
 			path = Prefabs;
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 			);
 			name = Swiftgram;
 			packageProductDependencies = (
+				8921198F28E448D100F20A6C /* PostgresClientKit */,
 			);
 			productName = Swiftgram;
 			productReference = 89D8F52F28E08E1A0009679A /* Swiftgram.app */;
@@ -148,6 +157,7 @@
 			);
 			mainGroup = 89D8F52628E08E1A0009679A;
 			packageReferences = (
+				8921198E28E448D100F20A6C /* XCRemoteSwiftPackageReference "PostgresClientKit" */,
 			);
 			productRefGroup = 89D8F53028E08E1A0009679A /* Products */;
 			projectDirPath = "";
@@ -178,7 +188,9 @@
 				892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */,
 				89D8F53528E08E1A0009679A /* ContentView.swift in Sources */,
 				89D8F54128E09DD40009679A /* FeedView.swift in Sources */,
+				8921199228E44FD900F20A6C /* LocationBox.swift in Sources */,
 				89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */,
+				8921199428E483AC00F20A6C /* Comment.swift in Sources */,
 				898DEB0428E0A2E800B68AB1 /* OwnProfileView.swift in Sources */,
 				898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */,
 				89E1775E28E398750008A20B /* ImageLoader.swift in Sources */,
@@ -395,6 +407,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8921198E28E448D100F20A6C /* XCRemoteSwiftPackageReference "PostgresClientKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/codewinsdotcom/PostgresClientKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8921198F28E448D100F20A6C /* PostgresClientKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8921198E28E448D100F20A6C /* XCRemoteSwiftPackageReference "PostgresClientKit" */;
+			productName = PostgresClientKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89D8F52728E08E1A0009679A /* Project object */;
 }
