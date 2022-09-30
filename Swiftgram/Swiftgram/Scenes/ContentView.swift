@@ -30,7 +30,7 @@ struct ContentView: View {
                 case 3:
                     InteractionsView()
                 case 4:
-                    OwnProfileView()
+                    ProfileView(userId: "none yet")
                 default:
                     NavigationView {
                         Text("ERROR: unexpected navbar index!")

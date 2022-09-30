@@ -12,7 +12,7 @@
 		8921199428E483AC00F20A6C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199328E483AC00F20A6C /* Comment.swift */; };
 		892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CF81828E0BA69005E7585 /* ImagePost.swift */; };
 		898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0128E0A29100B68AB1 /* InteractionsView.swift */; };
-		898DEB0428E0A2E800B68AB1 /* OwnProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */; };
+		898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0328E0A2E800B68AB1 /* ProfileView.swift */; };
 		89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F53228E08E1A0009679A /* SwiftgramApp.swift */; };
 		89D8F53528E08E1A0009679A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F53428E08E1A0009679A /* ContentView.swift */; };
 		89D8F53728E08E1C0009679A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D8F53628E08E1C0009679A /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 		8921199328E483AC00F20A6C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		892CF81828E0BA69005E7585 /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
 		898DEB0128E0A29100B68AB1 /* InteractionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionsView.swift; sourceTree = "<group>"; };
-		898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnProfileView.swift; sourceTree = "<group>"; };
+		898DEB0328E0A2E800B68AB1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		89D8F52F28E08E1A0009679A /* Swiftgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D8F53228E08E1A0009679A /* SwiftgramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftgramApp.swift; sourceTree = "<group>"; };
 		89D8F53428E08E1A0009679A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				89D8F54028E09DD40009679A /* FeedView.swift */,
 				89D8F54828E0A1930009679A /* DiscoverView.swift */,
 				898DEB0128E0A29100B68AB1 /* InteractionsView.swift */,
-				898DEB0328E0A2E800B68AB1 /* OwnProfileView.swift */,
+				898DEB0328E0A2E800B68AB1 /* ProfileView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 				8921199228E44FD900F20A6C /* LocationBox.swift in Sources */,
 				89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */,
 				8921199428E483AC00F20A6C /* Comment.swift in Sources */,
-				898DEB0428E0A2E800B68AB1 /* OwnProfileView.swift in Sources */,
+				898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */,
 				898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */,
 				89E1775E28E398750008A20B /* ImageLoader.swift in Sources */,
 				89D8F54928E0A1930009679A /* DiscoverView.swift in Sources */,
