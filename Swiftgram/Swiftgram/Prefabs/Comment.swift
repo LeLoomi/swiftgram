@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct Comment: View {
-    
     var publisherName: String = "none"
     var content: String = "none"
-    
+
     init(publisherName: String, content: String) {
         self.publisherName = publisherName
         self.content = content
     }
-    
+
     var body: some View {
         HStack {
             Text(publisherName + " ").bold() +
-            Text (content)
+                Text(content)
             Spacer()
         }
         .font(.system(size: 15))

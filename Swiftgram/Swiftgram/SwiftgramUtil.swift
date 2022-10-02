@@ -9,9 +9,6 @@
 import Foundation
 import SwiftUI
 
-
 extension String {
-    func loadAsImage() -> Image {
-        
-    }
+    func loadAsImage() -> Image {}
 }

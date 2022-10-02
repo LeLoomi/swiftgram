@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8914A85028E9893300BBDEB0 /* ProfileImageTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */; };
 		8921199028E448D100F20A6C /* PostgresClientKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8921198F28E448D100F20A6C /* PostgresClientKit */; };
 		8921199228E44FD900F20A6C /* LocationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199128E44FD900F20A6C /* LocationBox.swift */; };
 		8921199428E483AC00F20A6C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199328E483AC00F20A6C /* Comment.swift */; };
 		892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CF81828E0BA69005E7585 /* ImagePost.swift */; };
 		898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0128E0A29100B68AB1 /* InteractionsView.swift */; };
-		898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0328E0A2E800B68AB1 /* ProfileView.swift */; };
+		898DEB0428E0A2E800B68AB1 /* OthersProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0328E0A2E800B68AB1 /* OthersProfileView.swift */; };
+		89C555FE28E76E440086E6B3 /* OwnProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C555FD28E76E440086E6B3 /* OwnProfileView.swift */; };
 		89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F53228E08E1A0009679A /* SwiftgramApp.swift */; };
 		89D8F53528E08E1A0009679A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F53428E08E1A0009679A /* ContentView.swift */; };
 		89D8F53728E08E1C0009679A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D8F53628E08E1C0009679A /* Assets.xcassets */; };
@@ -23,11 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTile.swift; sourceTree = "<group>"; };
 		8921199128E44FD900F20A6C /* LocationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBox.swift; sourceTree = "<group>"; };
 		8921199328E483AC00F20A6C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		892CF81828E0BA69005E7585 /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
 		898DEB0128E0A29100B68AB1 /* InteractionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionsView.swift; sourceTree = "<group>"; };
-		898DEB0328E0A2E800B68AB1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; usesTabs = 0; };
+		898DEB0328E0A2E800B68AB1 /* OthersProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersProfileView.swift; sourceTree = "<group>"; usesTabs = 0; };
+		89C555FD28E76E440086E6B3 /* OwnProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnProfileView.swift; sourceTree = "<group>"; };
 		89D8F52F28E08E1A0009679A /* Swiftgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D8F53228E08E1A0009679A /* SwiftgramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftgramApp.swift; sourceTree = "<group>"; };
 		89D8F53428E08E1A0009679A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,7 +98,8 @@
 				89D8F54028E09DD40009679A /* FeedView.swift */,
 				89D8F54828E0A1930009679A /* DiscoverView.swift */,
 				898DEB0128E0A29100B68AB1 /* InteractionsView.swift */,
-				898DEB0328E0A2E800B68AB1 /* ProfileView.swift */,
+				898DEB0328E0A2E800B68AB1 /* OthersProfileView.swift */,
+				89C555FD28E76E440086E6B3 /* OwnProfileView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				892CF81828E0BA69005E7585 /* ImagePost.swift */,
 				8921199128E44FD900F20A6C /* LocationBox.swift */,
 				8921199328E483AC00F20A6C /* Comment.swift */,
+				8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */,
 			);
 			path = Prefabs;
 			sourceTree = "<group>";
@@ -191,7 +197,9 @@
 				8921199228E44FD900F20A6C /* LocationBox.swift in Sources */,
 				89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */,
 				8921199428E483AC00F20A6C /* Comment.swift in Sources */,
-				898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */,
+				898DEB0428E0A2E800B68AB1 /* OthersProfileView.swift in Sources */,
+				8914A85028E9893300BBDEB0 /* ProfileImageTile.swift in Sources */,
+				89C555FE28E76E440086E6B3 /* OwnProfileView.swift in Sources */,
 				898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */,
 				89E1775E28E398750008A20B /* ImageLoader.swift in Sources */,
 				89D8F54928E0A1930009679A /* DiscoverView.swift in Sources */,

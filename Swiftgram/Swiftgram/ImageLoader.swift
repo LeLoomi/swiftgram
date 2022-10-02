@@ -8,8 +8,4 @@
 import Foundation
 import SwiftUI
 
-class ImageLoader:ObservableObject {
-    
-    
-
-}
+class ImageLoader: ObservableObject {}
