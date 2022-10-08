@@ -30,7 +30,7 @@ struct ImagePost: View {
     init(publisherName: String, publisherAvatarUrl: String, imageUrl: String, likeCount: UInt32, postLocation: String) {
         self.publisherName = publisherName
         self.publisherAvatarUrl = publisherAvatarUrl
-        postImageUrl = imageUrl
+        self.postImageUrl = imageUrl
         self.likeCount = likeCount
         self.postLocation = postLocation
     }
