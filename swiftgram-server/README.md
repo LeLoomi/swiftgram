@@ -1,8 +1,6 @@
 # Server API Overview
 > Request are always made by the client
 
-<br>
-
 ## Get image post data
 Request:
 ```json
