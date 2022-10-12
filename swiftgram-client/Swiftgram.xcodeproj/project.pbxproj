@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8914A85028E9893300BBDEB0 /* ProfileImageTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */; };
-		8921199028E448D100F20A6C /* PostgresClientKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8921198F28E448D100F20A6C /* PostgresClientKit */; };
 		8921199228E44FD900F20A6C /* LocationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199128E44FD900F20A6C /* LocationBox.swift */; };
 		8921199428E483AC00F20A6C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199328E483AC00F20A6C /* Comment.swift */; };
 		892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CF81828E0BA69005E7585 /* ImagePost.swift */; };
@@ -47,7 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8921199028E448D100F20A6C /* PostgresClientKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +130,6 @@
 			);
 			name = Swiftgram;
 			packageProductDependencies = (
-				8921198F28E448D100F20A6C /* PostgresClientKit */,
 			);
 			productName = Swiftgram;
 			productReference = 89D8F52F28E08E1A0009679A /* Swiftgram.app */;
@@ -163,7 +160,6 @@
 			);
 			mainGroup = 89D8F52628E08E1A0009679A;
 			packageReferences = (
-				8921198E28E448D100F20A6C /* XCRemoteSwiftPackageReference "PostgresClientKit" */,
 			);
 			productRefGroup = 89D8F53028E08E1A0009679A /* Products */;
 			projectDirPath = "";
@@ -415,25 +411,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		8921198E28E448D100F20A6C /* XCRemoteSwiftPackageReference "PostgresClientKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/codewinsdotcom/PostgresClientKit";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8921198F28E448D100F20A6C /* PostgresClientKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8921198E28E448D100F20A6C /* XCRemoteSwiftPackageReference "PostgresClientKit" */;
-			productName = PostgresClientKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89D8F52728E08E1A0009679A /* Project object */;
 }

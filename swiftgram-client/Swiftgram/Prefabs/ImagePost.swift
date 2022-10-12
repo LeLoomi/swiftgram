@@ -1,5 +1,5 @@
 //
-//  Imagepost.swift
+//  ImagePost.swift
 //  Swiftgram
 //
 //  Created by Eliah Lohr on 25.09.22.
@@ -13,7 +13,7 @@ struct ImagePost: View {
     // until we have server backend to go along, use init with all arguments!
     private var contentId: String = "not set" // unique ID of the post. Used i.e. to get Image data from the server when displaying the post
 
-    // these ones will be set when post data is being downloaded. Implement new ones WITH datatype to avoid having to unwrap!
+    // these variables will be set when post data is being downloaded. Implement new ones WITH datatype to avoid having to unwrap!
     private var publisherName: String = "not set"
     private var publisherAvatarUrl: String = "not set"
     private var postImageUrl: String = "not set"
