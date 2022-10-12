@@ -11,6 +11,9 @@ struct FeedView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 10) {
+                //This VStack later will hold all our posts that we instantiate
+                //Maybe change to LazyVStack or similar
+                
                 ImagePost(publisherName: "Si Luan Pham",
                           publisherAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg",
                           imageUrl: "https://i.ibb.co/thp8tmS/temple.jpg",
