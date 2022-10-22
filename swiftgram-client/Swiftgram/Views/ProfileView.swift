@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OthersProfileView: View {
     // These are set by hand via init for testing until we have server backend for this. Initiate new ones with type to remove the need for unwrapping
+    private var isOurs: Bool = false
     private var userId: String = "not set"
     private var ownerName: String = "not set"
     private var ownerAvatarUrl: String = "not set"
@@ -22,10 +23,12 @@ struct OthersProfileView: View {
     init(userId: String) {
         self.userId = userId
         // fetch userdata here
+        // also check if the porfile is ours and set bool accordingly
     }
 
     // This init is for debugging, with hand set values
-    init(ownerName: String, ownerAvatarUrl: String, postCount: UInt8, followerCount: UInt8, followingCount: UInt8, profileBio: String, userIsFollowing: Bool) {
+    init(ownerName: String, ownerAvatarUrl: String, postCount: UInt8, followerCount: UInt8, followingCount: UInt8, profileBio: String, userIsFollowing: Bool, isOurs:Bool) {
+        self.isOurs = isOurs
         self.ownerName = ownerName
         self.ownerAvatarUrl = ownerAvatarUrl
         self.postCount = postCount
@@ -41,14 +44,16 @@ struct OthersProfileView: View {
             HStack {
                 Text(ownerName).font(.system(size: 25, weight: .semibold))
                 Spacer()
-                Button(userIsFollowing ? "Follow" : "Following") {
-                            userIsFollowing.toggle()
-                }.padding(.vertical, 4)
-                    .padding(.horizontal, 8)
-                    .background(
-                        Rectangle()
-                            .foregroundColor(Color("ContainerButtonBody"))
-                            .cornerRadius(10))
+                if(isOurs == false) {
+                    Button(userIsFollowing ? "Follow" : "Following") {
+                        userIsFollowing.toggle()
+                    }.padding(.vertical, 4)
+                        .padding(.horizontal, 8)
+                        .background(
+                            Rectangle()
+                                .foregroundColor(Color("ContainerButtonBody"))
+                                .cornerRadius(10))
+                }
 
             }.padding(15)
 
@@ -127,6 +132,6 @@ struct OthersProfileView: View {
 
 struct OthersProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        OthersProfileView(ownerName: "Si Luan Pham", ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
+        OthersProfileView(ownerName: "Si Luan Pham", ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true, isOurs: true)
     }
 }
