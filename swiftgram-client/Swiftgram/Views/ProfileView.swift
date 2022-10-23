@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OthersProfileView: View {
     // These are set by hand via init for testing until we have server backend for this. Initiate new ones with type to remove the need for unwrapping
-    private var isOurs: Bool = false
+    private var isOurs: Bool = false    //we use this to determine which buttons to show
     private var userId: String = "not set"
     private var ownerName: String = "not set"
     private var ownerAvatarUrl: String = "not set"
@@ -44,7 +44,8 @@ struct OthersProfileView: View {
             HStack {
                 Text(ownerName).font(.system(size: 25, weight: .semibold))
                 Spacer()
-                if(isOurs == false) {
+                switch isOurs {
+                case false:
                     Button(userIsFollowing ? "Follow" : "Following") {
                         userIsFollowing.toggle()
                     }.padding(.vertical, 4)
@@ -53,8 +54,15 @@ struct OthersProfileView: View {
                             Rectangle()
                                 .foregroundColor(Color("ContainerButtonBody"))
                                 .cornerRadius(10))
-                }
+                case true:
+                    Button(action: {
+                        // add link into settings panel here
+                    }, label: {
+                        Image(systemName: "gear")
+                            .font(.system(size: 25))
+                    })
 
+                }
             }.padding(15)
 
             // this HStack is the avatar image plus the stats
@@ -132,6 +140,6 @@ struct OthersProfileView: View {
 
 struct OthersProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        OthersProfileView(ownerName: "Si Luan Pham", ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true, isOurs: true)
+        OthersProfileView(ownerName: "Si Luan Pham", ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true, isOurs: false)
     }
 }

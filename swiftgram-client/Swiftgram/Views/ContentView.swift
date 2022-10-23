@@ -1,6 +1,7 @@
 //
 //  ContentView.swift
 //  Swiftgram
+//  This view is the top of the application. It "holds" all content.
 //
 //  Created by Eliah Lohr on 25.09.22.
 //
@@ -26,7 +27,7 @@ struct ContentView: View {
             case 3:
                 InteractionsView()
             case 4:
-                OthersProfileView(ownerName: "Si Luan Pham", ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: false)
+                OthersProfileView(ownerName: "Si Luan Pham", ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: false, isOurs: true)
             default:
                 NavigationView {
                     Text("ERROR: unexpected navbar index!")
