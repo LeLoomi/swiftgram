@@ -19,7 +19,13 @@ struct ImagePost: View {
     private var postImageUrl: String = "not set"
     private var likeCount: UInt32 = 0
     private var postLocation: String = "none"
-
+    private var postTimesamp: Date = Date.init()
+    
+    //styling variables
+    let avatarSize: CGFloat = 45
+    let imageSize:CGFloat = 350
+    let cornerRounding: CGFloat = 15
+    
     // for useless, supposed to fetch stuff from the server later
     init(contentId: String) {
         self.contentId = contentId
@@ -27,12 +33,13 @@ struct ImagePost: View {
     }
 
     // this constructor to hand test data while no server code is written. Set location to 'none' if no location tag wanted
-    init(publisherName: String, publisherAvatarUrl: String, imageUrl: String, likeCount: UInt32, postLocation: String) {
+    init(publisherName: String, publisherAvatarUrl: String, imageUrl: String, likeCount: UInt32, postLocation: String, postTimestamp:Date) {
         self.publisherName = publisherName
         self.publisherAvatarUrl = publisherAvatarUrl
         self.postImageUrl = imageUrl
         self.likeCount = likeCount
         self.postLocation = postLocation
+        self.postTimesamp = postTimestamp
     }
 
     var body: some View {
@@ -42,11 +49,11 @@ struct ImagePost: View {
                 // our publisher image
                 AsyncImage(url: URL(string: publisherAvatarUrl)) { image in
                     image.resizable()
-                        .frame(width: 50, height: 50)
+                        .frame(width: avatarSize, height: avatarSize)
                         .clipShape(Capsule())
                         .padding(0)
                 } placeholder: {
-                    ProgressView().frame(width: 50, height: 50)
+                    ProgressView().frame(width: avatarSize, height: avatarSize)
                         .clipShape(Capsule())
                         .progressViewStyle(CircularProgressViewStyle(tint: Color("ContainerText")))
                         .background(Capsule().foregroundColor(Color("AppBackground").opacity(0.3)))
@@ -66,21 +73,21 @@ struct ImagePost: View {
             // the posts actual image
             AsyncImage(url: URL(string: postImageUrl)) { image in
                 image.resizable()
-                    .frame(width: 350, height: 350, alignment: .top)
-                    .cornerRadius(15)
+                    .frame(width: imageSize, height: imageSize, alignment: .top)
+                    .cornerRadius(cornerRounding)
                     .padding(0)
             } placeholder: {
                 // Progress view to indicate when downloading
-                ProgressView().frame(width: 350, height: 350, alignment: .center)
+                ProgressView().frame(width: imageSize, height: imageSize, alignment: .center)
                     .cornerRadius(15)
                     .progressViewStyle(CircularProgressViewStyle(tint: Color("ContainerText")))
                     .background(Rectangle().foregroundColor(Color("AppBackground")
-                            .opacity(0.3)).cornerRadius(15))
+                            .opacity(0.3)).cornerRadius(cornerRounding))
                     .padding(0)
             }
             .overlay(LocationBox(postLocation: postLocation), alignment: .bottomTrailing) // Location box as overlay over the image
 
-            // Our post stats stuff, likes comment button..
+            // Our post stats stuff, likes comment button and timestamp
             HStack {
                 Button(action: {
                     // add like code here
@@ -101,6 +108,17 @@ struct ImagePost: View {
                     .font(.system(size: 15, weight: .semibold))
 
                 Spacer()
+                
+                Text(Date.now, format: .dateTime.day().month().year())
+                    .font(.system(size: 12, weight: .semibold))
+                    .opacity(0.5).padding(0)
+                
+                Image(systemName: "timer")
+                    .font(.system(size: 12, weight: .semibold))
+                    .padding(.leading, -4)
+                    .opacity(0.5)
+
+                
             }.padding(.vertical, 10).padding(.horizontal, 15)
 
             // current placeholder comment, might be moved somewhat in the future? This will depend how comment section will be handled
@@ -108,17 +126,17 @@ struct ImagePost: View {
         }
         .foregroundColor(Color("ContainerText"))
         .padding(.bottom, 25)
-        .frame(width: 370, alignment: .top)
+        .frame(width: imageSize + 20, alignment: .top)
         .background(alignment: .top) {
             Rectangle() // as long as paddings (.trailing/.vertical) are set correctly, the background will auto scale
                 .foregroundColor(Color("ContainerBackground"))
-                .cornerRadius(15)
+                .cornerRadius(cornerRounding)
         }
     }
 }
 
 struct ImagePost_Previews: PreviewProvider {
     static var previews: some View {
-        ImagePost(publisherName: "Si Luan Pham", publisherAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", imageUrl: "https://i.ibb.co/thp8tmS/temple.jpg", likeCount: 56, postLocation: "Ninh Binh, Vietnam")
+        ImagePost(publisherName: "Si Luan Pham", publisherAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", imageUrl: "https://i.ibb.co/thp8tmS/temple.jpg", likeCount: 56, postLocation: "Ninh Binh, Vietnam", postTimestamp: Date.init())
     }
 }

@@ -18,6 +18,7 @@ struct Comment: View {
 
     var body: some View {
         HStack {
+            //change name to be a button taking you to their profile
             Text(publisherName + " ").bold() +
                 Text(content)
             Spacer()

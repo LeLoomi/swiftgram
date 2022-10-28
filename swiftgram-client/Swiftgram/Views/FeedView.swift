@@ -17,19 +17,19 @@ struct FeedView: View {
                           publisherAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg",
                           imageUrl: "https://i.ibb.co/thp8tmS/temple.jpg",
                           likeCount: 56,
-                          postLocation: "Ninh Binh, Vietnam")
+                          postLocation: "Ninh Binh, Vietnam", postTimestamp: Date.init())
 
                 ImagePost(publisherName: "Tommy Lewis",
                           publisherAvatarUrl: "https://i.ibb.co/xMbLRqb/profile-picture.jpg",
                           imageUrl: "https://i.ibb.co/YN3vmNr/toronto.jpg",
                           likeCount: 73,
-                          postLocation: "Toronto, Canada")
+                          postLocation: "Toronto, Canada", postTimestamp: Date.init())
 
                 ImagePost(publisherName: "Lilly Ann",
                           publisherAvatarUrl: "https://i.ibb.co/jhdTcgy/profile-picture.jpg",
                           imageUrl: "https://i.ibb.co/h2LNhB6/14.jpg",
                           likeCount: 61,
-                          postLocation: "New York City, USA")
+                          postLocation: "New York City, USA", postTimestamp: Date.init())
             }
         }.cornerRadius(15)
             .shadow(color: Color("AppBackground").opacity(0.75), radius: 5)
