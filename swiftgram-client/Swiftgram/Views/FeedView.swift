@@ -13,19 +13,19 @@ struct FeedView: View {
             LazyVStack(spacing: 10) {
                 //This VStack later will hold all our posts that we instantiate
                 
-                ImagePost(publisherName: "Si Luan Pham",
+                ImagePost(publisherName: "Si Luan Pham", isVerified: true,
                           publisherAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg",
                           imageUrl: "https://i.ibb.co/thp8tmS/temple.jpg",
                           likeCount: 56,
                           postLocation: "Ninh Binh, Vietnam", postTimestamp: Date.init())
 
-                ImagePost(publisherName: "Tommy Lewis",
+                ImagePost(publisherName: "Tommy Lewis", isVerified: true,
                           publisherAvatarUrl: "https://i.ibb.co/xMbLRqb/profile-picture.jpg",
                           imageUrl: "https://i.ibb.co/YN3vmNr/toronto.jpg",
                           likeCount: 73,
                           postLocation: "Toronto, Canada", postTimestamp: Date.init())
 
-                ImagePost(publisherName: "Lilly Ann",
+                ImagePost(publisherName: "Lilly Ann", isVerified: true,
                           publisherAvatarUrl: "https://i.ibb.co/jhdTcgy/profile-picture.jpg",
                           imageUrl: "https://i.ibb.co/h2LNhB6/14.jpg",
                           likeCount: 61,

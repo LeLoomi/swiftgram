@@ -15,6 +15,7 @@ struct ImagePost: View {
 
     // these variables will be set when post data is being downloaded. Implement new ones WITH datatype to avoid having to unwrap!
     private var publisherName: String = "not set"
+    private var isVerified: Bool = false
     private var publisherAvatarUrl: String = "not set"
     private var postImageUrl: String = "not set"
     private var likeCount: UInt32 = 0
@@ -33,8 +34,9 @@ struct ImagePost: View {
     }
 
     // this constructor to hand test data while no server code is written. Set location to 'none' if no location tag wanted
-    init(publisherName: String, publisherAvatarUrl: String, imageUrl: String, likeCount: UInt32, postLocation: String, postTimestamp:Date) {
+    init(publisherName: String, isVerified: Bool, publisherAvatarUrl: String, imageUrl: String, likeCount: UInt32, postLocation: String, postTimestamp:Date) {
         self.publisherName = publisherName
+        self.isVerified = isVerified
         self.publisherAvatarUrl = publisherAvatarUrl
         self.postImageUrl = imageUrl
         self.likeCount = likeCount
@@ -63,6 +65,9 @@ struct ImagePost: View {
                 // the publishers name next to the avatar
                 Text(publisherName)
                     .font(.system(size: 20, weight: .semibold))
+                
+                //the verification badge, only active if verified
+                VerifiedCheckmark(isVerified: isVerified, size: 15)
 
                 // move it all to the left in the HStack
                 Spacer()
@@ -137,6 +142,6 @@ struct ImagePost: View {
 
 struct ImagePost_Previews: PreviewProvider {
     static var previews: some View {
-        ImagePost(publisherName: "Si Luan Pham", publisherAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", imageUrl: "https://i.ibb.co/thp8tmS/temple.jpg", likeCount: 56, postLocation: "Ninh Binh, Vietnam", postTimestamp: Date.init())
+        ImagePost(publisherName: "Si Luan Pham", isVerified: true, publisherAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", imageUrl: "https://i.ibb.co/thp8tmS/temple.jpg", likeCount: 56, postLocation: "Ninh Binh, Vietnam", postTimestamp: Date.init())
     }
 }

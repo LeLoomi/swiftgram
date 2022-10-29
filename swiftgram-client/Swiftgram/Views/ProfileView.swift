@@ -12,12 +12,17 @@ struct OthersProfileView: View {
     private var isOurs: Bool = false    //we use this to determine which buttons to show
     private var userId: String = "not set"
     private var ownerName: String = "not set"
+    private var isVerified: Bool = false
     private var ownerAvatarUrl: String = "not set"
     private var postCount: UInt8 = 0
     private var followerCount: UInt8 = 0
     private var followingCount: UInt8 = 0
     private var profileBio: String = "none" // profiles can not have bios!
     @State var userIsFollowing: Bool = false
+    
+    //style variables
+    let textSize: CGFloat = 15
+    let avatarSize: CGFloat = 90
 
     // This constructor is for production.
     init(userId: String) {
@@ -27,9 +32,10 @@ struct OthersProfileView: View {
     }
 
     // This init is for debugging, with hand set values
-    init(ownerName: String, ownerAvatarUrl: String, postCount: UInt8, followerCount: UInt8, followingCount: UInt8, profileBio: String, userIsFollowing: Bool, isOurs:Bool) {
+    init(isOurs: Bool, ownerName: String, isVerified: Bool, ownerAvatarUrl: String, postCount: UInt8, followerCount: UInt8, followingCount: UInt8, profileBio: String, userIsFollowing: Bool) {
         self.isOurs = isOurs
         self.ownerName = ownerName
+        self.isVerified = isVerified
         self.ownerAvatarUrl = ownerAvatarUrl
         self.postCount = postCount
         self.followerCount = followerCount
@@ -40,9 +46,10 @@ struct OthersProfileView: View {
 
     var body: some View {
         VStack {
-            // this is the owner's name and the follow button
+            // this is the owner's name, badge and the follow button
             HStack {
-                Text(ownerName).font(.system(size: 25, weight: .semibold))
+                Text(ownerName).font(.system(size: textSize + 10, weight: .semibold))
+                VerifiedCheckmark(isVerified: isVerified, size: textSize).padding(-3)
                 Spacer()
                 switch isOurs {
                 case false:
@@ -59,7 +66,7 @@ struct OthersProfileView: View {
                         // add link into settings panel here
                     }, label: {
                         Image(systemName: "gear")
-                            .font(.system(size: 25))
+                            .font(.system(size: textSize + 10))
                     })
 
                 }
@@ -70,12 +77,12 @@ struct OthersProfileView: View {
                 // our profile owner avatar
                 AsyncImage(url: URL(string: ownerAvatarUrl)) { image in
                     image.resizable()
-                        .frame(width: 90, height: 90)
+                        .frame(width: avatarSize, height: avatarSize)
                         .clipShape(Capsule())
                         .padding(0)
                 } placeholder: {
                     ProgressView()
-                        .frame(width: 90, height: 90)
+                        .frame(width: avatarSize, height: avatarSize)
                         .clipShape(Capsule())
                         .progressViewStyle(CircularProgressViewStyle(tint: Color("ContainerText")))
                         .background(Capsule().foregroundColor(Color("AppBackground").opacity(0.3)))
@@ -84,27 +91,27 @@ struct OthersProfileView: View {
 
                 Spacer()
                 VStack {
-                    Text(String(postCount)).font(.system(size: 25, weight: .semibold))
-                    Text(String("Posts")).font(.system(size: 15))
+                    Text(String(postCount)).font(.system(size: textSize + 10, weight: .semibold))
+                    Text(String("Posts")).font(.system(size: textSize))
                 }
 
                 Spacer()
                 VStack {
-                    Text(String(followingCount)).font(.system(size: 25, weight: .semibold))
-                    Text(String("Following")).font(.system(size: 15))
+                    Text(String(followingCount)).font(.system(size: textSize + 10, weight: .semibold))
+                    Text(String("Following")).font(.system(size: textSize))
                 }
 
                 Spacer()
                 VStack {
-                    Text(String(followerCount)).font(.system(size: 25, weight: .semibold))
-                    Text(String("Follower")).font(.system(size: 15))
+                    Text(String(followerCount)).font(.system(size: textSize + 10, weight: .semibold))
+                    Text(String("Follower")).font(.system(size: textSize))
                 }
 
                 Spacer()
 
             }.padding(.horizontal, 15).padding(.top, -5)
 
-            //Profile bio
+            //Profile bio. We hardcode isVerified to false because of this
             Comment(publisherName: ownerName, content: profileBio)
             
             //Post History
@@ -140,6 +147,6 @@ struct OthersProfileView: View {
 
 struct OthersProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        OthersProfileView(ownerName: "Si Luan Pham", ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true, isOurs: false)
+        OthersProfileView(isOurs: false, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
     }
 }
