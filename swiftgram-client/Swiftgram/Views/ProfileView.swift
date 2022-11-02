@@ -14,11 +14,13 @@ struct OthersProfileView: View {
     private var ownerName: String = "not set"
     private var isVerified: Bool = false
     private var ownerAvatarUrl: String = "not set"
-    private var postCount: UInt8 = 0
-    private var followerCount: UInt8 = 0
-    private var followingCount: UInt8 = 0
-    private var profileBio: String = "none" // profiles can not have bios!
-    @State var userIsFollowing: Bool = false
+    private var postCount: UInt16 = 0
+    private var followerCount: UInt32 = 0
+    private var followingCount: UInt32 = 0
+    private var profileBio: String = "none" // profiles can be without bios!
+    @State private var userIsFollowing: Bool = false
+    
+    let butler: Butler = Butler()
     
     //style variables
     let textSize: CGFloat = 15
@@ -32,7 +34,7 @@ struct OthersProfileView: View {
     }
 
     // This init is for debugging, with hand set values
-    init(isOurs: Bool, ownerName: String, isVerified: Bool, ownerAvatarUrl: String, postCount: UInt8, followerCount: UInt8, followingCount: UInt8, profileBio: String, userIsFollowing: Bool) {
+    init(isOurs: Bool, ownerName: String, isVerified: Bool, ownerAvatarUrl: String, postCount: UInt16, followerCount: UInt32, followingCount: UInt32, profileBio: String, userIsFollowing: Bool) {
         self.isOurs = isOurs
         self.ownerName = ownerName
         self.isVerified = isVerified
@@ -91,19 +93,22 @@ struct OthersProfileView: View {
 
                 Spacer()
                 VStack {
-                    Text(String(postCount)).font(.system(size: textSize + 10, weight: .semibold))
+                    Text(butler.formatUInt16(number: postCount))
+                        .font(.system(size: textSize + 10, weight: .semibold))
                     Text(String("Posts")).font(.system(size: textSize))
                 }
 
                 Spacer()
                 VStack {
-                    Text(String(followingCount)).font(.system(size: textSize + 10, weight: .semibold))
+                    Text(butler.formatUInt32(number: followingCount))
+                        .font(.system(size: textSize + 10, weight: .semibold))
                     Text(String("Following")).font(.system(size: textSize))
                 }
 
                 Spacer()
                 VStack {
-                    Text(String(followerCount)).font(.system(size: textSize + 10, weight: .semibold))
+                    Text(String(butler.formatUInt32(number: followerCount)))
+                        .font(.system(size: textSize + 10, weight: .semibold))
                     Text(String("Follower")).font(.system(size: textSize))
                 }
 
@@ -147,6 +152,6 @@ struct OthersProfileView: View {
 
 struct OthersProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        OthersProfileView(isOurs: false, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
+        OthersProfileView(isOurs: false, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 17, followerCount: 7600000, followingCount: 9200, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
     }
 }

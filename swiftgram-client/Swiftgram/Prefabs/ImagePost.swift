@@ -21,11 +21,13 @@ struct ImagePost: View {
     private var likeCount: UInt32 = 0
     private var postLocation: String = "none"
     private var postTimesamp: Date = Date.init()
+    @State private var isLiked: Bool = false
     
     //styling variables
     let avatarSize: CGFloat = 45
     let imageSize:CGFloat = 350
     let cornerRounding: CGFloat = 15
+    let butler: Butler = Butler()
     
     // for useless, supposed to fetch stuff from the server later
     init(contentId: String) {
@@ -68,6 +70,7 @@ struct ImagePost: View {
                 
                 //the verification badge, only active if verified
                 VerifiedCheckmark(isVerified: isVerified, size: 15)
+                    .padding(.leading, -3)
 
                 // move it all to the left in the HStack
                 Spacer()
@@ -91,30 +94,41 @@ struct ImagePost: View {
                     .padding(0)
             }
             .overlay(LocationBox(postLocation: postLocation), alignment: .bottomTrailing) // Location box as overlay over the image
+            .gesture(TapGesture(count: 2).onEnded {
+                isLiked = true
+            })
 
             // Our post stats stuff, likes comment button and timestamp
             HStack {
                 Button(action: {
-                    // add like code here
+                    isLiked.toggle()
+                    // add like server code here
                 }, label: {
-                    // Later we need to switch the like icon around if userLiked == true
-                    Image(systemName: "heart")
-                        .font(.system(size: 20, weight: .semibold))
+                    if(isLiked)
+                    {
+                        Image(systemName: "heart.fill")
+                            .font(.system(size: 20, weight: .semibold))
+                    }
+                    else {
+                        Image(systemName: "heart")
+                            .font(.system(size: 20, weight: .semibold))
+                    }
                 })
 
                 Button(action: {
                     // add like code here
+                    
                 }, label: {
                     Image(systemName: "bubble.left")
                         .font(.system(size: 18, weight: .semibold))
                 })
 
-                Text(String(likeCount) + " Likes")
+                Text(String(butler.formatUInt32(number: likeCount)) + " Likes")
                     .font(.system(size: 15, weight: .semibold))
 
                 Spacer()
                 
-                Text(Date.now, format: .dateTime.day().month().year())
+                Text(postTimesamp, format: .dateTime.day().month().year())
                     .font(.system(size: 12, weight: .semibold))
                     .opacity(0.5).padding(0)
                 
@@ -142,6 +156,6 @@ struct ImagePost: View {
 
 struct ImagePost_Previews: PreviewProvider {
     static var previews: some View {
-        ImagePost(publisherName: "Si Luan Pham", isVerified: true, publisherAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", imageUrl: "https://i.ibb.co/thp8tmS/temple.jpg", likeCount: 56, postLocation: "Ninh Binh, Vietnam", postTimestamp: Date.init())
+        ImagePost(publisherName: "Si Luan Pham", isVerified: true, publisherAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", imageUrl: "https://i.ibb.co/thp8tmS/temple.jpg", likeCount: 5600, postLocation: "Ninh Binh, Vietnam", postTimestamp: Date.init())
     }
 }
