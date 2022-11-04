@@ -70,7 +70,7 @@ struct OthersProfileView: View {
                         Image(systemName: "gear")
                             .font(.system(size: textSize + 10))
                     })
-
+                    
                 }
             }.padding(15)
 
@@ -92,22 +92,25 @@ struct OthersProfileView: View {
                 }
 
                 Spacer()
+                
                 VStack {
-                    Text(butler.formatUInt16(number: postCount))
+                    Text(butler.formatMetricUInt16(number: postCount))
                         .font(.system(size: textSize + 10, weight: .semibold))
                     Text(String("Posts")).font(.system(size: textSize))
                 }
 
                 Spacer()
+                
                 VStack {
-                    Text(butler.formatUInt32(number: followingCount))
+                    Text(butler.formatMetricUInt32(number: followingCount))
                         .font(.system(size: textSize + 10, weight: .semibold))
                     Text(String("Following")).font(.system(size: textSize))
                 }
 
                 Spacer()
+                
                 VStack {
-                    Text(String(butler.formatUInt32(number: followerCount)))
+                    Text(String(butler.formatMetricUInt32(number: followerCount)))
                         .font(.system(size: textSize + 10, weight: .semibold))
                     Text(String("Follower")).font(.system(size: textSize))
                 }
@@ -123,21 +126,16 @@ struct OthersProfileView: View {
             let columns = [
                 GridItem(.adaptive(minimum: 100), spacing: 0)
                 ]
-            
+
             ScrollView {
                 LazyVGrid(columns: columns, alignment: .center, spacing: 15) {
                     ProfileImageTile(contentUrl: "https://i.ibb.co/thp8tmS/temple.jpg")
-                    ProfileImageTile(contentUrl: "https://i.ibb.co/thp8tmS/temple.jpg")
-                    ProfileImageTile(contentUrl: "https://i.ibb.co/thp8tmS/temple.jpg")
-                    ProfileImageTile(contentUrl: "https://i.ibb.co/thp8tmS/temple.jpg")
-                    ProfileImageTile(contentUrl: "https://i.ibb.co/thp8tmS/temple.jpg")
+                    ProfileImageTile(contentUrl: "https://i.ibb.co/3rmGmdC/skyline.png")
+                    ProfileImageTile(contentUrl: "https://i.ibb.co/RHZBNG8/bikes.png")
+                    ProfileImageTile(contentUrl: "https://i.ibb.co/bKX0knS/leafes.png")
+                    ProfileImageTile(contentUrl: "https://i.ibb.co/pRv8Nm6/river.png")
                 }.padding(10)
             }
-
-            
-            Divider()
-            
-            Spacer() // REMOVE AFTER UI BUILING
         }
         .foregroundColor(Color("ContainerText"))
         .padding(.bottom, 25)
@@ -152,6 +150,6 @@ struct OthersProfileView: View {
 
 struct OthersProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        OthersProfileView(isOurs: false, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 17, followerCount: 7600000, followingCount: 9200, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
+        OthersProfileView(isOurs: false, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 5, followerCount: 2000000, followingCount: 342, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
     }
 }

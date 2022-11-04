@@ -81,6 +81,7 @@ struct ImagePost: View {
             // the posts actual image
             AsyncImage(url: URL(string: postImageUrl)) { image in
                 image.resizable()
+                    .aspectRatio(contentMode: .fit)
                     .frame(width: imageSize, height: imageSize, alignment: .top)
                     .cornerRadius(cornerRounding)
                     .padding(0)
@@ -123,7 +124,7 @@ struct ImagePost: View {
                         .font(.system(size: 18, weight: .semibold))
                 })
 
-                Text(String(butler.formatUInt32(number: likeCount)) + " Likes")
+                Text(String(butler.formatMetricUInt32(number: likeCount)) + " Likes")
                     .font(.system(size: 15, weight: .semibold))
 
                 Spacer()
