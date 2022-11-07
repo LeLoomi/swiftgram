@@ -96,7 +96,7 @@ struct OthersProfileView: View {
                 VStack {
                     Text(butler.formatMetricUInt16(number: postCount))
                         .font(.system(size: textSize + 10, weight: .semibold))
-                    Text(String("Posts")).font(.system(size: textSize))
+                    Text(NSLocalizedString("Posts", comment: "")).font(.system(size: textSize))
                 }
 
                 Spacer()
@@ -104,7 +104,7 @@ struct OthersProfileView: View {
                 VStack {
                     Text(butler.formatMetricUInt32(number: followingCount))
                         .font(.system(size: textSize + 10, weight: .semibold))
-                    Text(String("Following")).font(.system(size: textSize))
+                    Text(NSLocalizedString("Following", comment: "")).font(.system(size: textSize))
                 }
 
                 Spacer()
@@ -112,7 +112,7 @@ struct OthersProfileView: View {
                 VStack {
                     Text(String(butler.formatMetricUInt32(number: followerCount)))
                         .font(.system(size: textSize + 10, weight: .semibold))
-                    Text(String("Follower")).font(.system(size: textSize))
+                    Text(NSLocalizedString("Followers", comment: "")).font(.system(size: textSize))
                 }
 
                 Spacer()
@@ -150,6 +150,6 @@ struct OthersProfileView: View {
 
 struct OthersProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        OthersProfileView(isOurs: false, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 5, followerCount: 2000000, followingCount: 342, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
+        OthersProfileView(isOurs: false, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 5, followerCount: 153600, followingCount: 342, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
     }
 }
