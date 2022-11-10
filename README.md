@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/leloomi/swiftgram/badge)](https://www.codefactor.io/repository/github/leloomi/swiftgram)<br>
 ![image](https://user-images.githubusercontent.com/48943807/191544803-817105a1-8529-42cd-9aad-0842af3fb3ba.png)</br>
 Swiftgram is a hobby project to get to know Swift and SwiftUI, as well as REST API design and databases.
 </br><br/>
