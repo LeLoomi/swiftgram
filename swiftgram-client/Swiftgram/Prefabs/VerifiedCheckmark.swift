@@ -12,6 +12,8 @@ struct VerifiedCheckmark: View {
     var isVerified: Bool = false
     var size: CGFloat = 15
     
+    @State var showTooltip = false
+    
     init(isVerified:Bool, size:CGFloat) {
         self.isVerified = isVerified
         self.size = size
@@ -19,9 +21,19 @@ struct VerifiedCheckmark: View {
     
     var body: some View {
         if(isVerified) {
-            Image(systemName: "checkmark.seal")
-                .font(.system(size: size, weight: .semibold))
-                .foregroundColor(Color("ContainerText"))
+            Button(action: {
+                showTooltip = true
+            }, label: {
+                Image(systemName: "checkmark.seal")
+                    .font(.system(size: size, weight: .semibold))
+                    .foregroundColor(Color("ContainerText"))
+            })
+            .alert(isPresented: $showTooltip) {
+                Alert(
+                    title: Text(NSLocalizedString("This user is verified.", comment: "")),
+                    message: Text(NSLocalizedString("Their identity has been verified by Swiftgram.", comment: ""))
+                )
+            }
         }
     }
 }
