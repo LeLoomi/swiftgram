@@ -22,6 +22,7 @@
 		89D8F54128E09DD40009679A /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F54028E09DD40009679A /* FeedView.swift */; };
 		89D8F54928E0A1930009679A /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F54828E0A1930009679A /* DiscoverView.swift */; };
 		89DA86E129125A38001BB2BE /* Butler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA86E029125A38001BB2BE /* Butler.swift */; };
+		89ED9D10291E4EE000F6D98D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED9D0F291E4EE000F6D98D /* MapView.swift */; };
 		89F4C8D52918E03600894E50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89F4C8D32918E03600894E50 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		89DA86E029125A38001BB2BE /* Butler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butler.swift; sourceTree = "<group>"; };
 		89ED9D0D291E4CAC00F6D98D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		89ED9D0E291E4CB300F6D98D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		89ED9D0F291E4EE000F6D98D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		89F4C8D42918E03600894E50 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				8921199328E483AC00F20A6C /* Comment.swift */,
 				8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */,
 				893EE19A290C3A0F0047A045 /* VerifiedCheckmark.swift */,
+				89ED9D0F291E4EE000F6D98D /* MapView.swift */,
 			);
 			path = Prefabs;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				8921199228E44FD900F20A6C /* LocationBox.swift in Sources */,
 				89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */,
 				8921199428E483AC00F20A6C /* Comment.swift in Sources */,
+				89ED9D10291E4EE000F6D98D /* MapView.swift in Sources */,
 				898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */,
 				89DA86E129125A38001BB2BE /* Butler.swift in Sources */,
 				8914A85028E9893300BBDEB0 /* ProfileImageTile.swift in Sources */,
