@@ -20,8 +20,8 @@ Response:
   "imageURL": "https://example.com/avatar.jpg",
   "postDescription": "Lorem ipsum.",
   "likeCount": 100,
-  "locationNorth": "51.0544896",
-  "locationEast": "13.7330875",
+  "latitude": "51.0544896",
+  "lonitude": "13.7330875",
   "commentchainID": "<ID>" //to look up the comments if needed
 }
 ```
