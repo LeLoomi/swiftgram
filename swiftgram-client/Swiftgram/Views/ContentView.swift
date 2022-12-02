@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var navIndex = 0
+    @AppStorage("AppTheme") private var appTheme = "BaseTheme"
     let tabIcons = ["person.crop.rectangle.stack", "magnifyingglass", "plus.circle", "heart", "person"]
 
     var body: some View {
@@ -45,12 +46,12 @@ struct ContentView: View {
                         if index == 2 {
                             Image(systemName: tabIcons[index])
                                 .font(.system(size: 40, weight: .bold))
-                                .foregroundColor(.orange)
+                                .foregroundColor(Color(appTheme + "/SpecialButtonBody"))
                         } else {
                             Image(systemName: tabIcons[index])
                                 .font(.system(size: 28))
                                 .foregroundColor(navIndex == index ?
-                                    Color("ContainerText") : Color.gray)
+                                    Color(appTheme + "/ContainerText") : Color.gray)
                         }
                         Spacer()
                     })
@@ -60,8 +61,8 @@ struct ContentView: View {
                 .padding(.bottom, -15)
                 .padding(.top, 5)
 
-        }.background(Color("AppBackground"))
-            .foregroundColor(Color("ContainerText"))
+        }.background(Color(appTheme + "/AppBackground"))
+            .foregroundColor(Color(appTheme + "/ContainerText"))
             .preferredColorScheme(.dark)
     }
 

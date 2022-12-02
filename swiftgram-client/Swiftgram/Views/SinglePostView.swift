@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct SinglePostView: View {
-    var contentID:String = "none"
-    
-    init(contentID:String) {
+    var contentID: String = "none"
+    @AppStorage("AppTheme") private var appTheme = "BaseTheme"
+
+    init(contentID: String) {
         self.contentID = contentID
     }
-    
+
     var body: some View {
         ZStack {
-            Color.init("AppBackground").ignoresSafeArea()
+            Color(appTheme + "/AppBackground").ignoresSafeArea()
             ImagePost(contentId: contentID)
         }
     }

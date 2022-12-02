@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OthersProfileView: View {
     // These are set by hand via init for testing until we have server backend for this. Initiate new ones with type to remove the need for unwrapping
-    private var isOurs: Bool = false    //we use this to determine which buttons to show
+    private var isOurs: Bool = false // we use this to determine which buttons to show
     private var userId: String = "not set"
     private var ownerName: String = "not set"
     private var isVerified: Bool = false
@@ -19,10 +19,12 @@ struct OthersProfileView: View {
     private var followingCount: UInt32 = 0
     private var profileBio: String = "none" // profiles can be without bios!
     @State private var userIsFollowing: Bool = false
-    
-    let butler: Butler = Butler()
-    
-    //style variables
+
+    @State var showSettingsPopover = false
+    @AppStorage("AppTheme") private var appTheme = "BaseTheme"
+    let butler: Butler = .init() // We use our butler for number formatting
+
+    // local style variables
     let textSize: CGFloat = 15
     let avatarSize: CGFloat = 90
 
@@ -61,16 +63,16 @@ struct OthersProfileView: View {
                         .padding(.horizontal, 8)
                         .background(
                             Rectangle()
-                                .foregroundColor(Color("ContainerButtonBody"))
+                                .foregroundColor(Color(appTheme + "/ContainerButtonBody"))
                                 .cornerRadius(10))
                 case true:
                     Button(action: {
                         // add link into settings panel here
+                        showSettingsPopover = true
                     }, label: {
                         Image(systemName: "gear")
                             .font(.system(size: textSize + 10))
                     })
-                    
                 }
             }.padding(15)
 
@@ -86,13 +88,13 @@ struct OthersProfileView: View {
                     ProgressView()
                         .frame(width: avatarSize, height: avatarSize)
                         .clipShape(Capsule())
-                        .progressViewStyle(CircularProgressViewStyle(tint: Color("ContainerText")))
-                        .background(Capsule().foregroundColor(Color("AppBackground").opacity(0.3)))
+                        .progressViewStyle(CircularProgressViewStyle(tint: Color(appTheme + "/ContainerText")))
+                        .background(Capsule().foregroundColor(Color(appTheme + "/AppBackground").opacity(0.3)))
                         .padding(0)
                 }
 
                 Spacer()
-                
+
                 VStack {
                     Text(butler.formatMetricUInt16(number: postCount))
                         .font(.system(size: textSize + 10, weight: .semibold))
@@ -100,7 +102,7 @@ struct OthersProfileView: View {
                 }
 
                 Spacer()
-                
+
                 VStack {
                     Text(butler.formatMetricUInt32(number: followingCount))
                         .font(.system(size: textSize + 10, weight: .semibold))
@@ -108,7 +110,7 @@ struct OthersProfileView: View {
                 }
 
                 Spacer()
-                
+
                 VStack {
                     Text(String(butler.formatMetricUInt32(number: followerCount)))
                         .font(.system(size: textSize + 10, weight: .semibold))
@@ -119,13 +121,13 @@ struct OthersProfileView: View {
 
             }.padding(.horizontal, 15).padding(.top, -5)
 
-            //Profile bio. We hardcode isVerified to false because of this
+            // Profile bio. We hardcode isVerified to false because of this
             Comment(publisherName: ownerName, content: profileBio)
-            
-            //Post History
+
+            // Post History
             let columns = [
-                GridItem(.adaptive(minimum: 100), spacing: 0)
-                ]
+                GridItem(.adaptive(minimum: 100), spacing: 0),
+            ]
 
             ScrollView {
                 LazyVGrid(columns: columns, alignment: .center, spacing: 15) {
@@ -137,19 +139,20 @@ struct OthersProfileView: View {
                 }.padding(10)
             }
         }
-        .foregroundColor(Color("ContainerText"))
+        .foregroundColor(Color(appTheme + "/ContainerText"))
         .padding(.bottom, 25)
         .frame(width: 370, alignment: .top)
         .background(alignment: .top) {
             Rectangle() // as long as paddings (.trailing/.vertical) are set correctly, the background will auto scale
-                .foregroundColor(Color("ContainerBackground"))
+                .foregroundColor(Color(appTheme + "/ContainerBackground"))
                 .cornerRadius(15)
         }
+        .popover(isPresented: $showSettingsPopover, content: { SettingsView() })
     }
 }
 
 struct OthersProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        OthersProfileView(isOurs: false, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 5, followerCount: 153600, followingCount: 342, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
+        OthersProfileView(isOurs: true, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 5, followerCount: 153_600, followingCount: 342, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
     }
 }

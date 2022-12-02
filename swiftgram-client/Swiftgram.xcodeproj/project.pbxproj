@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8907BE62292BC9F7000FDFDF /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8907BE61292BC9F7000FDFDF /* AppearanceSettings.swift */; };
+		890D2FF229261AD800B76C62 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D2FF129261AD800B76C62 /* SettingsView.swift */; };
 		8914A85028E9893300BBDEB0 /* ProfileImageTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */; };
 		8921199228E44FD900F20A6C /* LocationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199128E44FD900F20A6C /* LocationBox.swift */; };
 		8921199428E483AC00F20A6C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199328E483AC00F20A6C /* Comment.swift */; };
@@ -23,10 +25,14 @@
 		89D8F54928E0A1930009679A /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8F54828E0A1930009679A /* DiscoverView.swift */; };
 		89DA86E129125A38001BB2BE /* Butler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DA86E029125A38001BB2BE /* Butler.swift */; };
 		89ED9D10291E4EE000F6D98D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED9D0F291E4EE000F6D98D /* MapView.swift */; };
+		89ED9D12291E5B7800F6D98D /* JsonAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED9D11291E5B7800F6D98D /* JsonAgent.swift */; };
+		89ED9D14291E5FF900F6D98D /* SGData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED9D13291E5FF900F6D98D /* SGData.swift */; };
 		89F4C8D52918E03600894E50 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89F4C8D32918E03600894E50 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8907BE61292BC9F7000FDFDF /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
+		890D2FF129261AD800B76C62 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTile.swift; sourceTree = "<group>"; };
 		8921199128E44FD900F20A6C /* LocationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBox.swift; sourceTree = "<group>"; };
 		8921199328E483AC00F20A6C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -46,6 +52,9 @@
 		89ED9D0D291E4CAC00F6D98D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		89ED9D0E291E4CB300F6D98D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		89ED9D0F291E4EE000F6D98D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		89ED9D11291E5B7800F6D98D /* JsonAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonAgent.swift; sourceTree = "<group>"; };
+		89ED9D13291E5FF900F6D98D /* SGData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGData.swift; sourceTree = "<group>"; };
+		89ED9D15291FD62100F6D98D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		89F4C8D42918E03600894E50 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8907BE60292BC99D000FDFDF /* SettingsViews */ = {
+			isa = PBXGroup;
+			children = (
+				8907BE61292BC9F7000FDFDF /* AppearanceSettings.swift */,
+			);
+			path = SettingsViews;
+			sourceTree = "<group>";
+		};
 		89D8F52628E08E1A0009679A = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +96,12 @@
 		89D8F53128E08E1A0009679A /* Swiftgram */ = {
 			isa = PBXGroup;
 			children = (
-				89F4C8D32918E03600894E50 /* Localizable.strings */,
 				89D8F53228E08E1A0009679A /* SwiftgramApp.swift */,
+				89ED9D13291E5FF900F6D98D /* SGData.swift */,
 				89DA86E029125A38001BB2BE /* Butler.swift */,
+				89ED9D11291E5B7800F6D98D /* JsonAgent.swift */,
+				89ED9D15291FD62100F6D98D /* Info.plist */,
+				89F4C8D32918E03600894E50 /* Localizable.strings */,
 				89E1775B28E397D10008A20B /* Views */,
 				89E1775C28E397F10008A20B /* Prefabs */,
 				89D8F53628E08E1C0009679A /* Assets.xcassets */,
@@ -101,12 +121,14 @@
 		89E1775B28E397D10008A20B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8907BE60292BC99D000FDFDF /* SettingsViews */,
 				89D8F53428E08E1A0009679A /* ContentView.swift */,
 				89D8F54028E09DD40009679A /* FeedView.swift */,
 				89D8F54828E0A1930009679A /* DiscoverView.swift */,
 				898DEB0128E0A29100B68AB1 /* InteractionsView.swift */,
 				898DEB0328E0A2E800B68AB1 /* ProfileView.swift */,
 				89D7EF0F28FD41640049D122 /* SinglePostView.swift */,
+				890D2FF129261AD800B76C62 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,14 +226,18 @@
 			files = (
 				89D7EF1028FD41640049D122 /* SinglePostView.swift in Sources */,
 				892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */,
+				8907BE62292BC9F7000FDFDF /* AppearanceSettings.swift in Sources */,
 				89D8F53528E08E1A0009679A /* ContentView.swift in Sources */,
 				89D8F54128E09DD40009679A /* FeedView.swift in Sources */,
 				8921199228E44FD900F20A6C /* LocationBox.swift in Sources */,
+				890D2FF229261AD800B76C62 /* SettingsView.swift in Sources */,
 				89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */,
+				89ED9D12291E5B7800F6D98D /* JsonAgent.swift in Sources */,
 				8921199428E483AC00F20A6C /* Comment.swift in Sources */,
 				89ED9D10291E4EE000F6D98D /* MapView.swift in Sources */,
 				898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */,
 				89DA86E129125A38001BB2BE /* Butler.swift in Sources */,
+				89ED9D14291E5FF900F6D98D /* SGData.swift in Sources */,
 				8914A85028E9893300BBDEB0 /* ProfileImageTile.swift in Sources */,
 				893EE19B290C3A0F0047A045 /* VerifiedCheckmark.swift in Sources */,
 				898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */,
@@ -268,6 +294,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -328,6 +355,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -360,8 +388,10 @@
 				DEVELOPMENT_TEAM = XB3KD3V58C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Swiftgram/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Swiftgram;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is used either when posting or when looking up locations from posts. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -395,8 +425,10 @@
 				DEVELOPMENT_TEAM = XB3KD3V58C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Swiftgram/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Swiftgram;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location is used either when posting or when looking up locations from posts. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

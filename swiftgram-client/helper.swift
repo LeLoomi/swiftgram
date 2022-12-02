@@ -9,7 +9,7 @@ import SwiftUI
 
 struct helper: View {
     var body: some View {
-        let butler: Butler = Butler()
+        let butler = Butler()
         Text(butler.wip(number: 1600))
     }
 }

@@ -1,5 +1,5 @@
 /* No comment provided by engineer. */
-"Discover" = "Découvrez";
+"Discover" = "Découvrir";
 
 /* No comment provided by engineer. */
 "Entry" = "Entrée";
@@ -8,19 +8,19 @@
 "ERROR: unexpected navbar index!" = "ERROR : index de la barre de navigation inattendu!";
 
 /* No comment provided by engineer. */
-"Follow" = "Suivez";
+"Follow" = "S'abonner";
 
 /* No comment provided by engineer. */
-"Followers" = "Suiveurs";
+"Followers" = "Abonnés";
 
 /* No comment provided by engineer. */
-"Following" = "Suivant";
+"Following" = "Abonné";
 
 /* No comment provided by engineer. */
 "Interactions" = "Interactions";
 
 /* No comment provided by engineer. */
-"Likes" = "Likes";
+"Likes" = "J'aime";
 
 /* No comment provided by engineer. */
 "Posts" = "Post";

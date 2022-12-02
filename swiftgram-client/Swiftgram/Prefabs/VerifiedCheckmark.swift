@@ -8,25 +8,25 @@
 import SwiftUI
 
 struct VerifiedCheckmark: View {
-    
     var isVerified: Bool = false
     var size: CGFloat = 15
-    
+
     @State var showTooltip = false
-    
-    init(isVerified:Bool, size:CGFloat) {
+    @AppStorage("AppTheme") private var appTheme = "BaseTheme"
+
+    init(isVerified: Bool, size: CGFloat) {
         self.isVerified = isVerified
         self.size = size
     }
-    
+
     var body: some View {
-        if(isVerified) {
+        if isVerified {
             Button(action: {
                 showTooltip = true
             }, label: {
                 Image(systemName: "checkmark.seal")
                     .font(.system(size: size, weight: .semibold))
-                    .foregroundColor(Color("ContainerText"))
+                    .foregroundColor(Color(appTheme + "/ContainerText"))
             })
             .alert(isPresented: $showTooltip) {
                 Alert(
