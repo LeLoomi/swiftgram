@@ -37,7 +37,7 @@ struct SettingsView: View {
                             Button {
                                 showPrivateProfileTooltip = true
                             } label: {
-                                Image(systemName: "info.circle")
+                                Image(systemName: "info.circle").font(.footnote)
                             }
                         }
                         .alert(isPresented: $showPrivateProfileTooltip) {
@@ -67,7 +67,7 @@ struct SettingsView: View {
                     }
 
                     NavigationLink {
-                        Text("Not yet implemented.")
+                        CacheSettingsView()
                     } label: {
                         Image(systemName: "sdcard").padding(.horizontal, 3)
                         Text(NSLocalizedString("Clear cache", comment: "Option in settings"))

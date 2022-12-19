@@ -58,7 +58,7 @@ struct ContentView: View {
                 }
 
             }.padding(.horizontal, 15)
-                .padding(.bottom, -15)
+                .padding(.bottom, -8)
                 .padding(.top, 5)
 
         }.background(Color(appTheme + "/AppBackground"))
