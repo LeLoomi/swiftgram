@@ -56,11 +56,11 @@ struct LocationBox: View {
                                 Button(action: {
                                     showMapPopover = false
                                 }, label: {
-                                    Image(systemName: "x.circle.fill")
+                                    Image(systemName: "xmark.circle.fill")
                                         .foregroundColor(Color(appTheme + "/ContainerText"))
-                                        .font(.system(size: 25))
+                                        .font(.system(size: 27))
                                         .shadow(radius: 15)
-                                }).padding(10)
+                                }).padding(12)
                             }
                             Spacer()
                             }
