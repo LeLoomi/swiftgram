@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     @State var privateProfile = false
     @State var showPrivateProfileTooltip = false
+    @State var cacheMemoryAmount: String = "16"
 
     var body: some View {
         NavigationView {
@@ -66,12 +67,17 @@ struct SettingsView: View {
                         Text(NSLocalizedString("Appearance", comment: "Option in settings")).padding(.horizontal, -1)
                     }
 
-                    NavigationLink {
-                        CacheSettingsView()
+                    Button {
+                        
                     } label: {
-                        Image(systemName: "sdcard").padding(.horizontal, 3)
-                        Text(NSLocalizedString("Clear cache", comment: "Option in settings"))
-                    }.foregroundColor(.gray)
+                        HStack {
+                            Image(systemName: "sdcard").padding(.horizontal, 3)
+                            Text(NSLocalizedString("Clear cache", comment: "Option in settings"))
+                            Spacer()
+                            Text("\(NSLocalizedString("this will free ", comment: "Tooltip in settings for cache clear button")) ~\(cacheMemoryAmount) MB").font(.footnote).padding(.top, 4)
+                        }.foregroundColor(.gray)
+                    }
+
                 }
 
                 // Account settings start here

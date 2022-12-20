@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8907BE62292BC9F7000FDFDF /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8907BE61292BC9F7000FDFDF /* AppearanceSettings.swift */; };
-		890C9F58294FE71A00FA616F /* CacheSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C9F57294FE71A00FA616F /* CacheSettingsView.swift */; };
 		890D2FF229261AD800B76C62 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D2FF129261AD800B76C62 /* SettingsView.swift */; };
 		8914A85028E9893300BBDEB0 /* ProfileImageTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */; };
 		8921199228E44FD900F20A6C /* LocationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199128E44FD900F20A6C /* LocationBox.swift */; };
@@ -33,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		8907BE61292BC9F7000FDFDF /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
-		890C9F57294FE71A00FA616F /* CacheSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheSettingsView.swift; sourceTree = "<group>"; };
 		890D2FF129261AD800B76C62 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTile.swift; sourceTree = "<group>"; };
 		8921199128E44FD900F20A6C /* LocationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBox.swift; sourceTree = "<group>"; };
@@ -71,13 +69,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8907BE60292BC99D000FDFDF /* SettingsViews */ = {
+		8907BE60292BC99D000FDFDF /* SettingsSubViews */ = {
 			isa = PBXGroup;
 			children = (
 				8907BE61292BC9F7000FDFDF /* AppearanceSettings.swift */,
-				890C9F57294FE71A00FA616F /* CacheSettingsView.swift */,
 			);
-			path = SettingsViews;
+			path = SettingsSubViews;
 			sourceTree = "<group>";
 		};
 		89D8F52628E08E1A0009679A = {
@@ -124,7 +121,7 @@
 		89E1775B28E397D10008A20B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8907BE60292BC99D000FDFDF /* SettingsViews */,
+				8907BE60292BC99D000FDFDF /* SettingsSubViews */,
 				89D8F53428E08E1A0009679A /* ContentView.swift */,
 				89D8F54028E09DD40009679A /* FeedView.swift */,
 				89D8F54828E0A1930009679A /* DiscoverView.swift */,
@@ -241,7 +238,6 @@
 				898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */,
 				89DA86E129125A38001BB2BE /* Butler.swift in Sources */,
 				89ED9D14291E5FF900F6D98D /* SGData.swift in Sources */,
-				890C9F58294FE71A00FA616F /* CacheSettingsView.swift in Sources */,
 				8914A85028E9893300BBDEB0 /* ProfileImageTile.swift in Sources */,
 				893EE19B290C3A0F0047A045 /* VerifiedCheckmark.swift in Sources */,
 				898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */,
