@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @AppStorage("AppTheme") private var appTheme: String = "BaseTheme"
+    
     @State var showPrivateProfileTooltip = false
     
     @State var privateProfile = false
@@ -95,7 +97,7 @@ struct SettingsView: View {
                     } label: {
                         Image(systemName: "minus.diamond").padding(.trailing, 2)
                         Text(NSLocalizedString("Delete account", comment: "Option in settings"))
-                    }.foregroundColor(Color("BaseTheme/WarningContainerText"))
+                    }.foregroundColor(.red)
                 }
                 
                 // Only app info goes here
