@@ -23,7 +23,7 @@ struct AppearanceSettings: View {
                 // App color mode
                 Section(NSLocalizedString("App color mode", comment: "Header in settings")) {
                     Picker("", selection: $colorModeIndex) {
-                        Text(NSLocalizedString("Follow system", comment: "Option in settings to set color mode.")).tag(0)
+                        Text(NSLocalizedString("System", comment: "Option in settings to set color mode.")).tag(0)
                         Text(NSLocalizedString("Light", comment: "Option in settings to set color mode.")).tag(1)
                         Text(NSLocalizedString("Dark", comment: "Option in settings to set color mode.")).tag(2)
                     }.pickerStyle(.segmented)

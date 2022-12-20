@@ -22,7 +22,7 @@
 /* Option in settings */
 "Clear cache" = "Cache leeren";
 
-/* Option in system */
+/* Option in settings to set color mode. */
 "Dark" = "Dunkel";
 
 /* Option in settings */
@@ -46,9 +46,6 @@
 /* No comment provided by engineer. */
 "Follow" = "Folgen";
 
-/* Option in settings to follow phones color mode */
-"Follow system" = "Spiegelt System";
-
 /* No comment provided by engineer. */
 "Followers" = "Gefolgte";
 
@@ -61,7 +58,7 @@
 /* No comment provided by engineer. */
 "Interactions" = "Aktivität";
 
-/* Option in system */
+/* Option in settings to set color mode. */
 "Light" = "Hell";
 
 /* No comment provided by engineer. */
@@ -105,6 +102,9 @@
 
 /* Theme name in settings */
 "Standard" = "Standard";
+
+/* Option in settings to set color mode. */
+"System" = "System";
 
 /* Tooltip in settings. */
 "tap to change" = "tippe zum ändern";
