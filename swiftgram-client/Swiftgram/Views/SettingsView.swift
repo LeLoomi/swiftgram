@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State var privateProfile = false
     @State var showPrivateProfileTooltip = false
+    
+    @State var privateProfile = false
     @State var cacheMemoryAmount: String = "16"
 
     var body: some View {
@@ -23,14 +24,14 @@ struct SettingsView: View {
                         Image(systemName: "person.crop.circle").padding(.trailing, 2)
                         Text(NSLocalizedString("Modify avatar", comment: "Option in settings"))
                     }
-
+                    
                     NavigationLink {
                         Text("Not yet implemented.")
                     } label: {
                         Image(systemName: "text.book.closed").padding(.trailing, 2)
                         Text(NSLocalizedString("Modify description", comment: "Option in settings"))
                     }
-
+                    
                     Toggle(isOn: $privateProfile) {
                         HStack {
                             Text(Image(systemName: "lock.shield")).padding(.trailing, 4)
@@ -47,10 +48,10 @@ struct SettingsView: View {
                                 message: Text(NSLocalizedString("You need to approve new followers before they gain access to your profile. \nPeople not following you will still see your name, avatar and bio.", comment: "Private profile explainer body"))
                             )
                         }
-
+                        
                     }.foregroundColor(.indigo)
                 }
-
+                
                 // App specific settings start here
                 Section(NSLocalizedString("Application", comment: "Section in settings")) {
                     NavigationLink {
@@ -59,14 +60,14 @@ struct SettingsView: View {
                         Image(systemName: "bell.badge").padding(.trailing, 2)
                         Text(NSLocalizedString("Notifcations", comment: "Option in settings"))
                     }
-
+                    
                     NavigationLink {
                         AppearanceSettings()
                     } label: {
                         Image(systemName: "theatermask.and.paintbrush")
                         Text(NSLocalizedString("Appearance", comment: "Option in settings")).padding(.horizontal, -1)
                     }
-
+                    
                     Button {
                         
                     } label: {
@@ -74,21 +75,21 @@ struct SettingsView: View {
                             Image(systemName: "sdcard").padding(.horizontal, 3)
                             Text(NSLocalizedString("Clear cache", comment: "Option in settings"))
                             Spacer()
-                            Text("\(NSLocalizedString("this will free ", comment: "Tooltip in settings for cache clear button")) ~\(cacheMemoryAmount) MB").font(.footnote).padding(.top, 4)
+                            Text("\(NSLocalizedString("this will free ", comment: "Tooltip in settings for cache clear button")) ~\(cacheMemoryAmount) MB").font(.footnote).padding(.top, 3)
                         }.foregroundColor(.gray)
                     }
-
+                    
                 }
-
+                
                 // Account settings start here
                 Section(NSLocalizedString("Account", comment: "Section in settings")) {
                     NavigationLink {
-                        Text("Not yet implemented.")
+                        SecuritySettings()
                     } label: {
                         Image(systemName: "key").padding(.horizontal, 4)
                         Text(NSLocalizedString("Login and security", comment: "Option in settings"))
                     }
-
+                    
                     NavigationLink {
                         Text("Not yet implemented.")
                     } label: {
@@ -96,10 +97,10 @@ struct SettingsView: View {
                         Text(NSLocalizedString("Delete account", comment: "Option in settings"))
                     }.foregroundColor(Color("BaseTheme/WarningContainerText"))
                 }
-
-                // Only app info goes here, maybe cache clear?
-                Section(NSLocalizedString("", comment: "Section in settings")) {
-                    Text(NSLocalizedString("Developed by Eliah Lohr - this project is purely educational.", comment: ""))
+                
+                // Only app info goes here
+                Section {
+                    Link(NSLocalizedString("Developed by Eliah Lohr - this project is purely educational.", comment: ""), destination: URL(string: "https://github.com/LeLoomi")!)
                         .font(.system(size: 14))
                         .foregroundColor(.gray)
                         .padding(2)
