@@ -1,5 +1,41 @@
+/* Section in settings */
+"Account" = "Konto";
+
+/* Header in settings */
+"App color mode" = "App Erscheinungsbild";
+
+/* Header in settings. */
+"App Theme" = "App Farbmodus";
+
+/* Option in settings */
+"Appearance" = "Erscheinungsbild";
+
+/* Section in settings */
+"Application" = "App";
+
+/* Theme name in settings */
+"Blue" = "Blau";
+
+/* Button in popup promt. */
+"Cancel" = "Abbrechen";
+
+/* Option in settings */
+"Clear cache" = "Cache leeren";
+
+/* Option in system */
+"Dark" = "Dunkel";
+
+/* Option in settings */
+"Delete account" = "Konto löschen";
+
+/* No comment provided by engineer. */
+"Developed by Eliah Lohr - this project is purely educational." = "Entwickelt von Eliah Lohr - Swiftgram ist ein Lernprojekt.";
+
 /* No comment provided by engineer. */
 "Discover" = "Entdecken";
+
+/* Header in settings */
+"Email and password" = "E-Mail und Passwort";
 
 /* No comment provided by engineer. */
 "Entry" = "Eintrag";
@@ -10,24 +46,87 @@
 /* No comment provided by engineer. */
 "Follow" = "Folgen";
 
+/* Option in settings to follow phones color mode */
+"Follow system" = "Spiegelt System";
+
 /* No comment provided by engineer. */
 "Followers" = "Gefolgte";
 
 /* No comment provided by engineer. */
 "Following" = "Gefolgt";
 
+/* Theme name in settings */
+"Grey" = "Grau";
+
 /* No comment provided by engineer. */
 "Interactions" = "Aktivität";
+
+/* Option in system */
+"Light" = "Hell";
 
 /* No comment provided by engineer. */
 "Likes" = "Likes";
 
+/* Option in settings */
+"Login and security" = "Login und Sicherheit";
+
+/* Option in settings */
+"Modify avatar" = "Bild anpassen";
+
+/* Option in settings */
+"Modify description" = "Bio ändern";
+
+/* No comment provided by engineer. */
+"my@email.de" = "";
+
+/* No comment provided by engineer. */
+"Not yet implemented." = "Noch nicht implementiert.";
+
+/* Option in settings */
+"Notifcations" = "Benachrichtigungen";
+
 /* No comment provided by engineer. */
 "Posts" = "Posts";
+
+/* Option in settings */
+"Private profile" = "Privates Profil";
+
+/* Private profile explainer header */
+"Private profiles" = "Private Profile";
+
+/* Section in settings */
+"Profile" = "Profil";
+
+/* Button in popup promt. */
+"Reset" = "Zurücksetzten";
+
+/* Reset  password dialog header */
+"Reset password" = "Passwort zurücksetzen";
+
+/* Theme name in settings */
+"Standard" = "Standard";
+
+/* Tooltip in settings. */
+"tap to change" = "tippe zum ändern";
 
 /* No comment provided by engineer. */
 "Their identity has been verified by Swiftgram." = "Die Identität wurde von Swiftgram überprüft.";
 
 /* No comment provided by engineer. */
 "This user is verified." = "Verifizierte Nutzer";
+
+/* Tooltip in settings for cache clear button */
+"this will free " = "das befreit";
+
+/* No comment provided by engineer. */
+"upload page" = "";
+
+/* Theme name in settings */
+"Violet" = "Violet";
+
+/* Private profile explainer body */
+"You need to approve new followers before they gain access to your profile. \nPeople not following you will still see your name, avatar and bio." = "Du musst neue Follower bestätigen bevor sie deine Posts sehen. Andere können dennoch deinen Namen, Avatar und deine Bio sehen.";
+
+/* Pswd reset dialog body. */
+"You'll recieve a reset link by email. \nAfter the reset you will need to re-login on all devices." = "Du bekommst eine E-Mail mit einem Reset-Link. Du musst dich nach ändern überall neu einloggen.";
 

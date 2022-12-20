@@ -16,7 +16,7 @@ struct SecuritySettings: View {
         Form {
             Section {
                 HStack {
-                    Image(systemName: "envelope")
+                    Image(systemName: "envelope").padding(.trailing, 1)
                     TextField("my@email.de", text: $userEmail)
                     Spacer()
                     Text(NSLocalizedString("tap to change", comment: "Tooltip in settings."))
@@ -33,13 +33,13 @@ struct SecuritySettings: View {
                     }.foregroundColor(.red)
                 }.alert(isPresented: $showResetPasswordDialog) {
                     Alert(
-                                title: Text(NSLocalizedString("Reset password", comment: "Reset  pswd dialog header")),
+                                title: Text(NSLocalizedString("Reset password", comment: "Reset  password dialog header")),
                                 message: Text(NSLocalizedString("You'll recieve a reset link by email. \nAfter the reset you will need to re-login on all devices.", comment: "Pswd reset dialog body.")),
-                                primaryButton: .destructive(
+                                primaryButton: .default(
                                     Text(NSLocalizedString("Cancel", comment: "Button in popup promt.")),
                                     action: {}
                                 ),
-                                secondaryButton: .default(
+                                secondaryButton: .destructive(
                                     Text(NSLocalizedString("Reset", comment: "Button in popup promt.")),
                                     action: {}
                                 )

@@ -9,10 +9,16 @@
 import Foundation
 
 struct Butler {
+    // Our user default save functions
     public func saveSetting(key: String, value: String) {
         UserDefaults.standard.set(value, forKey: key)
     }
+    
+    public func saveSetting(key: String, value: Int) {
+        UserDefaults.standard.set(value, forKey: key)
+    }
 
+    
     // our number formatter functions to give us our metric, shortened counts
     public func formatMetricUInt32(number: UInt32) -> String {
         switch number {
