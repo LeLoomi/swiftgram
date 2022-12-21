@@ -124,7 +124,7 @@ struct ImagePost: View {
                         .font(.system(size: 18, weight: .semibold))
                 })
 
-                Text(String(butler.formatMetricUInt32(number: likeCount)) + " " + NSLocalizedString("Likes", comment: ""))
+                Text(String(butler.formatMetricUInt(number: likeCount)) + " " + NSLocalizedString("Likes", comment: ""))
                     .font(.system(size: 15, weight: .semibold))
 
                 Spacer()

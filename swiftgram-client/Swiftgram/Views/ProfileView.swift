@@ -96,7 +96,7 @@ struct OthersProfileView: View {
                 Spacer()
 
                 VStack {
-                    Text(butler.formatMetricUInt16(number: postCount))
+                    Text(butler.formatMetricUInt(number: postCount))
                         .font(.system(size: textSize + 10, weight: .semibold))
                     Text(NSLocalizedString("Posts", comment: "")).font(.system(size: textSize))
                 }
@@ -104,7 +104,7 @@ struct OthersProfileView: View {
                 Spacer()
 
                 VStack {
-                    Text(butler.formatMetricUInt32(number: followingCount))
+                    Text(butler.formatMetricUInt(number: followingCount))
                         .font(.system(size: textSize + 10, weight: .semibold))
                     Text(NSLocalizedString("Following", comment: "")).font(.system(size: textSize))
                 }
@@ -112,7 +112,7 @@ struct OthersProfileView: View {
                 Spacer()
 
                 VStack {
-                    Text(String(butler.formatMetricUInt32(number: followerCount)))
+                    Text(String(butler.formatMetricUInt(number: followerCount)))
                         .font(.system(size: textSize + 10, weight: .semibold))
                     Text(NSLocalizedString("Followers", comment: "")).font(.system(size: textSize))
                 }

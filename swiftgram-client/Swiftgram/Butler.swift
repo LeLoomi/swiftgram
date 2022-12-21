@@ -20,7 +20,7 @@ struct Butler {
 
     
     // our number formatter functions to give us our metric, shortened counts
-    public func formatMetricUInt32(number: UInt32) -> String {
+    public func formatMetricUInt(number: UInt32) -> String {
         switch number {
         case _ where number <= 999:
             return String(number)
@@ -58,11 +58,11 @@ struct Butler {
         }
     }
 
-    public func formatMetricUInt16(number: UInt16) -> String {
-        return formatMetricUInt32(number: UInt32(number))
+    public func formatMetricUInt(number: UInt16) -> String {
+        return formatMetricUInt(number: UInt32(number))
     }
 
-    public func formatMetricUInt8(number: UInt8) -> String {
-        return formatMetricUInt32(number: UInt32(number))
+    public func formatMetricUInt(number: UInt8) -> String {
+        return formatMetricUInt(number: UInt32(number))
     }
 }

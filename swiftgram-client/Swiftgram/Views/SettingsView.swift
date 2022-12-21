@@ -23,14 +23,14 @@ struct SettingsView: View {
                     NavigationLink {
                         Text("Not yet implemented.")
                     } label: {
-                        Image(systemName: "person.crop.circle").padding(.trailing, 2)
+                        Image(systemName: "camera.aperture").padding(.trailing, 2)
                         Text(NSLocalizedString("Modify avatar", comment: "Option in settings"))
                     }
                     
                     NavigationLink {
                         Text("Not yet implemented.")
                     } label: {
-                        Image(systemName: "text.book.closed").padding(.trailing, 2)
+                        Image(systemName: "fleuron").padding(.trailing, 2)
                         Text(NSLocalizedString("Modify description", comment: "Option in settings"))
                     }
                     
