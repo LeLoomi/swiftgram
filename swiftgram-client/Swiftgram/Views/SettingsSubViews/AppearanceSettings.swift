@@ -40,7 +40,7 @@ struct AppearanceSettings: View {
                     }.pickerStyle(.inline)
                         .labelsHidden()
                         // Saving the theme when a new one is selected
-                        .onChange(of: $appThemeIndex.wrappedValue, perform: { newValue in
+                        .onChange(of: $appThemeIndex.wrappedValue, perform: { _ in
                             butler.saveSetting(key: "AppTheme", value: themes[appThemeIndex])
                             butler.saveSetting(key: "AppThemeIndex", value: appThemeIndex)
                         })
