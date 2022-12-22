@@ -28,7 +28,7 @@ struct SettingsView: View {
                     }
                     
                     NavigationLink {
-                        Text("Not yet implemented.")
+                        BioSettings()
                     } label: {
                         Image(systemName: "fleuron").padding(.trailing, 2)
                         Text(NSLocalizedString("Modify description", comment: "Option in settings"))
