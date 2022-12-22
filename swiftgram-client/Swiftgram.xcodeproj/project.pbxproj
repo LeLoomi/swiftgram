@@ -15,6 +15,8 @@
 		8921199428E483AC00F20A6C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199328E483AC00F20A6C /* Comment.swift */; };
 		892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CF81828E0BA69005E7585 /* ImagePost.swift */; };
 		893EE19B290C3A0F0047A045 /* VerifiedCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893EE19A290C3A0F0047A045 /* VerifiedCheckmark.swift */; };
+		89821B4D2953C979001A82A7 /* NotificationsSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89821B4C2953C979001A82A7 /* NotificationsSettings.swift */; };
+		89821B4F2953D674001A82A7 /* UnicolorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89821B4E2953D674001A82A7 /* UnicolorLabel.swift */; };
 		898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0128E0A29100B68AB1 /* InteractionsView.swift */; };
 		898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0328E0A2E800B68AB1 /* ProfileView.swift */; };
 		89D7EF1028FD41640049D122 /* SinglePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D7EF0F28FD41640049D122 /* SinglePostView.swift */; };
@@ -40,6 +42,8 @@
 		8921199328E483AC00F20A6C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		892CF81828E0BA69005E7585 /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
 		893EE19A290C3A0F0047A045 /* VerifiedCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedCheckmark.swift; sourceTree = "<group>"; };
+		89821B4C2953C979001A82A7 /* NotificationsSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsSettings.swift; sourceTree = "<group>"; };
+		89821B4E2953D674001A82A7 /* UnicolorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicolorLabel.swift; sourceTree = "<group>"; };
 		898DEB0128E0A29100B68AB1 /* InteractionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionsView.swift; sourceTree = "<group>"; };
 		898DEB0328E0A2E800B68AB1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		89D7EF0F28FD41640049D122 /* SinglePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePostView.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			children = (
 				8907BE61292BC9F7000FDFDF /* AppearanceSettings.swift */,
 				890C9F592951C0E100FA616F /* SecuritySettings.swift */,
+				89821B4C2953C979001A82A7 /* NotificationsSettings.swift */,
 			);
 			path = SettingsSubViews;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */,
 				893EE19A290C3A0F0047A045 /* VerifiedCheckmark.swift */,
 				89ED9D0F291E4EE000F6D98D /* MapView.swift */,
+				89821B4E2953D674001A82A7 /* UnicolorLabel.swift */,
 			);
 			path = Prefabs;
 			sourceTree = "<group>";
@@ -232,11 +238,13 @@
 				8907BE62292BC9F7000FDFDF /* AppearanceSettings.swift in Sources */,
 				89D8F53528E08E1A0009679A /* ContentView.swift in Sources */,
 				89D8F54128E09DD40009679A /* FeedView.swift in Sources */,
+				89821B4D2953C979001A82A7 /* NotificationsSettings.swift in Sources */,
 				8921199228E44FD900F20A6C /* LocationBox.swift in Sources */,
 				890D2FF229261AD800B76C62 /* SettingsView.swift in Sources */,
 				89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */,
 				89ED9D12291E5B7800F6D98D /* JsonAgent.swift in Sources */,
 				8921199428E483AC00F20A6C /* Comment.swift in Sources */,
+				89821B4F2953D674001A82A7 /* UnicolorLabel.swift in Sources */,
 				89ED9D10291E4EE000F6D98D /* MapView.swift in Sources */,
 				898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */,
 				89DA86E129125A38001BB2BE /* Butler.swift in Sources */,

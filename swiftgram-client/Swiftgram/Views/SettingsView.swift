@@ -57,7 +57,7 @@ struct SettingsView: View {
                 // App specific settings start here
                 Section(NSLocalizedString("Application", comment: "Section in settings")) {
                     NavigationLink {
-                        Text("Not yet implemented.")
+                        NotificationsSettings()
                     } label: {
                         Image(systemName: "bell.badge").padding(.trailing, 2)
                         Text(NSLocalizedString("Notifcations", comment: "Option in settings"))

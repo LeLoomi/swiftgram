@@ -17,7 +17,10 @@ struct Butler {
     public func saveSetting(key: String, value: Int) {
         UserDefaults.standard.set(value, forKey: key)
     }
-
+    
+    public func saveSetting(key: String, value: Bool) {
+        UserDefaults.standard.set(value, forKey: key)
+    }
     
     // our number formatter functions to give us our metric, shortened counts
     public func formatMetricUInt(number: UInt32) -> String {
