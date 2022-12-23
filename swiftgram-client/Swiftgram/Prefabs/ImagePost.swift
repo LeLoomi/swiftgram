@@ -56,15 +56,12 @@ struct ImagePost: View {
                 AsyncImage(url: URL(string: publisherAvatarUrl)) { image in
                     image.resizable()
                         .frame(width: avatarSize, height: avatarSize)
-                        .clipShape(Capsule())
-                        .padding(0)
                 } placeholder: {
                     ProgressView().frame(width: avatarSize, height: avatarSize)
-                        .clipShape(Capsule())
                         .progressViewStyle(CircularProgressViewStyle(tint: Color(appTheme + "/ContainerText")))
                         .background(Capsule().foregroundColor(Color(appTheme + "/AppBackground").opacity(0.3)))
-                        .padding(0)
-                }
+                }.clipShape(Capsule())
+                    .padding(0)
 
                 // the publishers name next to the avatar
                 Text(publisherName)
