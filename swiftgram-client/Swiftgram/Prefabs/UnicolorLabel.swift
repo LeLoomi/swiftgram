@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct UnicolorLabel: View {
+    @AppStorage("AppTheme") private var appTheme: String = "BaseTheme"
     
     let label: String
     let systemName: String
@@ -19,15 +20,15 @@ struct UnicolorLabel: View {
     
     var body: some View {
         Label {
-                    Text("Favorites")
+                    Text(label)
                 } icon: {
-                    Image(systemName: "heart")
+                    Image(systemName: systemName)
                 }
     }
 }
 
 struct UnicolorLabel_Previews: PreviewProvider {
     static var previews: some View {
-        UnicolorLabel(label: "Favorites", systemName: "heart")
+        UnicolorLabel(label: "Kiwis", systemName: "heart")
     }
 }

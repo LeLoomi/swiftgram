@@ -15,6 +15,7 @@
 		8921199428E483AC00F20A6C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199328E483AC00F20A6C /* Comment.swift */; };
 		892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CF81828E0BA69005E7585 /* ImagePost.swift */; };
 		893EE19B290C3A0F0047A045 /* VerifiedCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893EE19A290C3A0F0047A045 /* VerifiedCheckmark.swift */; };
+		8941E42729564C18007EBE90 /* AvatarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8941E42629564C18007EBE90 /* AvatarSettings.swift */; };
 		896FB7E92954C58500B198D9 /* BioSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FB7E82954C58500B198D9 /* BioSettings.swift */; };
 		89821B4D2953C979001A82A7 /* NotificationsSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89821B4C2953C979001A82A7 /* NotificationsSettings.swift */; };
 		89821B4F2953D674001A82A7 /* UnicolorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89821B4E2953D674001A82A7 /* UnicolorLabel.swift */; };
@@ -43,6 +44,7 @@
 		8921199328E483AC00F20A6C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		892CF81828E0BA69005E7585 /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
 		893EE19A290C3A0F0047A045 /* VerifiedCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifiedCheckmark.swift; sourceTree = "<group>"; };
+		8941E42629564C18007EBE90 /* AvatarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSettings.swift; sourceTree = "<group>"; };
 		896FB7E82954C58500B198D9 /* BioSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioSettings.swift; sourceTree = "<group>"; };
 		89821B4C2953C979001A82A7 /* NotificationsSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsSettings.swift; sourceTree = "<group>"; };
 		89821B4E2953D674001A82A7 /* UnicolorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicolorLabel.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				890C9F592951C0E100FA616F /* SecuritySettings.swift */,
 				89821B4C2953C979001A82A7 /* NotificationsSettings.swift */,
 				896FB7E82954C58500B198D9 /* BioSettings.swift */,
+				8941E42629564C18007EBE90 /* AvatarSettings.swift */,
 			);
 			path = SettingsSubViews;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				89821B4D2953C979001A82A7 /* NotificationsSettings.swift in Sources */,
 				8921199228E44FD900F20A6C /* LocationBox.swift in Sources */,
 				890D2FF229261AD800B76C62 /* SettingsView.swift in Sources */,
+				8941E42729564C18007EBE90 /* AvatarSettings.swift in Sources */,
 				89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */,
 				89ED9D12291E5B7800F6D98D /* JsonAgent.swift in Sources */,
 				8921199428E483AC00F20A6C /* Comment.swift in Sources */,

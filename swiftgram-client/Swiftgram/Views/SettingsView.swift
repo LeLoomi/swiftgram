@@ -21,7 +21,7 @@ struct SettingsView: View {
                 // Profile settings start here. All the stuff other users see.
                 Section(NSLocalizedString("Profile", comment: "Section in settings")) {
                     NavigationLink {
-                        Text("Not yet implemented.")
+                        AvatarSettings()
                     } label: {
                         Image(systemName: "camera.aperture").padding(.trailing, 2)
                         Text(NSLocalizedString("Modify avatar", comment: "Option in settings"))
@@ -71,7 +71,7 @@ struct SettingsView: View {
                     }
                     
                     Button {
-                        
+                        // ADD CACHE RESET FUNCTIONALITY HERE
                     } label: {
                         HStack {
                             Image(systemName: "sdcard").padding(.horizontal, 3)
@@ -92,12 +92,14 @@ struct SettingsView: View {
                         Text(NSLocalizedString("Login and security", comment: "Option in settings"))
                     }
                     
-                    NavigationLink {
-                        Text("Not yet implemented.")
+                    Button {
+                        // ADD ACCOUNT RESET FUNCTIONALITY HERE, ALERT FIRST!?
                     } label: {
-                        Image(systemName: "minus.diamond").padding(.trailing, 2)
-                        Text(NSLocalizedString("Delete account", comment: "Option in settings"))
-                    }.foregroundColor(.red)
+                        HStack {
+                            Image(systemName: "minus.diamond").padding(.trailing, 2)
+                            Text(NSLocalizedString("Delete account", comment: "Option in settings"))
+                        }.foregroundColor(.red)
+                    }
                 }
                 
                 // Only app info goes here
