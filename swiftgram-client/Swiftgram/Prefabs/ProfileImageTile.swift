@@ -41,6 +41,6 @@ struct ProfileImageTile_Previews: PreviewProvider {
     static var previews: some View {
         // ProfileImageTile(contentUrl: "https://i.ibb.co/YN3vmNr/toronto.jpg")
 
-        OthersProfileView(isOurs: true, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true)
+        ProfileView(isOurs: true, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 8, followerCount: 76, followingCount: 92, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true, privateProfile: true)
     }
 }
