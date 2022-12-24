@@ -51,7 +51,7 @@ struct ContentView: View {
                             Image(systemName: tabIcons[index])
                                 .font(.system(size: 28))
                                 .foregroundColor(navIndex == index ?
-                                    Color(appTheme + "/ContainerText") : Color.gray)
+                                                 Color(appTheme + "/ContainerText") : Color.gray)
                         }
                         Spacer()
                     })
@@ -63,7 +63,6 @@ struct ContentView: View {
 
         }.background(Color(appTheme + "/AppBackground"))
             .foregroundColor(Color(appTheme + "/ContainerText"))
-            .preferredColorScheme(.dark)
     }
 
     struct ContentView_Previews: PreviewProvider {
