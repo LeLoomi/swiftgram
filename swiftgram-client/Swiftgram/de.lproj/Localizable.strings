@@ -165,7 +165,7 @@
 "Violet" = "Violet";
 
 /* No comment provided by engineer. */
-"You can only see the users posts if you have been manually approved by them." = "Du kannst die Posts der Person nur sehen, wenn sie dich freischalten.";
+"You can only see the users posts if you have been manually approved by them." = "Du kannst die Posts der Person nur sehen, wenn sie dich freigeschalten hat.";
 
 /* Private profile explainer body */
 "You need to approve new followers before they gain access to your profile. \nPeople not following you will still see your name, avatar and bio." = "Du musst neue Follower bestätigen bevor sie deine Posts sehen. Andere können dennoch deinen Namen, Avatar und deine Bio sehen.";
