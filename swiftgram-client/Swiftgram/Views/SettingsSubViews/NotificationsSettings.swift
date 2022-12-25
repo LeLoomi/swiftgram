@@ -43,7 +43,7 @@ struct NotificationsSettings: View {
                         butler.saveSetting(key: "notifyNewComment", value: newComment)
                     })
             } header: {
-                Text("App")
+                Text(NSLocalizedString("App", comment: "Section in notification setttings"))
             }.disabled(!enableNotifcations)
             
             Section {
@@ -53,7 +53,7 @@ struct NotificationsSettings: View {
                     })
                 
             } header: {
-                Text(NSLocalizedString("Account", comment: "Section in settings"))
+                Text(NSLocalizedString("Account", comment: "Section in notification settings"))
             }.disabled(!enableNotifcations)
         }
     }

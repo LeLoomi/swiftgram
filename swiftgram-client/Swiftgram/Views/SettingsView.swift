@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SettingsView: View {    
+struct SettingsView: View {
     @State var showPrivateProfileTooltip = false
     
     @State var privateProfile = false
