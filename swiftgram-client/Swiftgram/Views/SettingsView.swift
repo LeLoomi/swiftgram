@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-struct SettingsView: View {
-    @AppStorage("AppTheme") private var appTheme: String = "BaseTheme"
-    
+struct SettingsView: View {    
     @State var showPrivateProfileTooltip = false
     
     @State var privateProfile = false

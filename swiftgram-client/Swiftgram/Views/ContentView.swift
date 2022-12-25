@@ -62,7 +62,6 @@ struct ContentView: View {
                 .padding(.top, 5)
 
         }.background(Color(appTheme + "/AppBackground"))
-            .foregroundColor(Color(appTheme + "/ContainerText"))
     }
 
     struct ContentView_Previews: PreviewProvider {

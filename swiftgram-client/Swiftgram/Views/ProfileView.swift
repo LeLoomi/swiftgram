@@ -175,6 +175,6 @@ struct ProfileView: View {
 
 struct OthersProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(isOurs: false, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 5, followerCount: 153_600, followingCount: 342, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true, privateProfile: true)
+        ProfileView(isOurs: true, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 5, followerCount: 153_600, followingCount: 342, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true, privateProfile: true)
     }
 }
