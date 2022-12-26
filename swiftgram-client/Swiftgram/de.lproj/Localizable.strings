@@ -128,13 +128,14 @@
 /* Button in popup promt. */
 "Reset" = "Zurücksetzten";
 
-/* Reset  password dialog header */
+/* Button in settings.
+   Reset  password dialog header */
 "Reset password" = "Passwort zurücksetzen";
 
 /* Theme name in settings */
 "Standard" = "Standard";
 
-/* No comment provided by engineer. */
+/* Tooltip in settings. */
 "Start typing to change your email adress." = "Beginne zu schreiben um deine Email zu ändern.";
 
 /* Option in settings to set color mode. */
@@ -149,10 +150,10 @@
 /* No comment provided by engineer. */
 "This user is verified." = "Verifizierte Nutzer";
 
-/* Tooltip in settings for cache clear button */
-"this will free " = "das befreit";
+/* E.g. this will free xy MB from the cache. */
+"this will free" = "das befreit";
 
-/* No comment provided by engineer. */
+/* Tooltip in settings. */
 "To save your email adress, tap the refresh icon." = "Um deine Email zu speichern drücke auf das refresh icon.";
 
 /* Reset  password dialog header */
@@ -176,6 +177,6 @@
 /* Pswd reset dialog body. */
 "You'll recieve a reset link by email. \nAfter the reset you will need to re-login on all devices." = "Du bekommst eine E-Mail mit einem Reset-Link. Du musst dich nach ändern überall neu einloggen.";
 
-/* No comment provided by engineer. */
+/* Tooltip in settings. */
 "Your bio goes here" = "Hier steht deine Bio";
 

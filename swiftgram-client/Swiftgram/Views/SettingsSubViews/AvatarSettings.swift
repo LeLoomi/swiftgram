@@ -32,28 +32,19 @@ struct AvatarSettings: View {
             Button {
                 // Add photos integrations here
             } label: {
-                HStack {
-                    Image(systemName: "photo").padding(.trailing, 2)
-                    Text(NSLocalizedString("From gallery", comment: "Option in avatar settings"))
-                }
+                Label(NSLocalizedString("From gallery", comment: "Option in avatar settings"), systemImage: "photo")
             }
             
             Button {
                 // Add camera import functionality here
             } label: {
-                HStack {
-                    Image(systemName: "camera").padding(.trailing, 2)
-                    Text(NSLocalizedString("From camera", comment: "Option in avatar settings"))
-                }
+                Label(NSLocalizedString("From camera", comment: "Option in avatar settings"), systemImage: "camera")
             }
 
             Button {
                 // Add remove avatar functionality here
             } label: {
-                HStack {
-                    Image(systemName: "person.crop.circle.badge.minus").padding(.horizontal, 3)
-                    Text(NSLocalizedString("Remove my avatar", comment: "Option in avatar settings"))
-                }
+                Label(NSLocalizedString("Remove my avatar", comment: "Option in avatar settings"), systemImage: "camera")
             }
         }
     }

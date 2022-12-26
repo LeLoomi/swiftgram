@@ -18,7 +18,6 @@
 		8941E42729564C18007EBE90 /* AvatarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8941E42629564C18007EBE90 /* AvatarSettings.swift */; };
 		896FB7E92954C58500B198D9 /* BioSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896FB7E82954C58500B198D9 /* BioSettings.swift */; };
 		89821B4D2953C979001A82A7 /* NotificationsSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89821B4C2953C979001A82A7 /* NotificationsSettings.swift */; };
-		89821B4F2953D674001A82A7 /* UnicolorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89821B4E2953D674001A82A7 /* UnicolorLabel.swift */; };
 		898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0128E0A29100B68AB1 /* InteractionsView.swift */; };
 		898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DEB0328E0A2E800B68AB1 /* ProfileView.swift */; };
 		89D7EF1028FD41640049D122 /* SinglePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D7EF0F28FD41640049D122 /* SinglePostView.swift */; };
@@ -47,7 +46,6 @@
 		8941E42629564C18007EBE90 /* AvatarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSettings.swift; sourceTree = "<group>"; };
 		896FB7E82954C58500B198D9 /* BioSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioSettings.swift; sourceTree = "<group>"; };
 		89821B4C2953C979001A82A7 /* NotificationsSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsSettings.swift; sourceTree = "<group>"; };
-		89821B4E2953D674001A82A7 /* UnicolorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicolorLabel.swift; sourceTree = "<group>"; };
 		898DEB0128E0A29100B68AB1 /* InteractionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionsView.swift; sourceTree = "<group>"; };
 		898DEB0328E0A2E800B68AB1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		89D7EF0F28FD41640049D122 /* SinglePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePostView.swift; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */,
 				893EE19A290C3A0F0047A045 /* VerifiedCheckmark.swift */,
 				89ED9D0F291E4EE000F6D98D /* MapView.swift */,
-				89821B4E2953D674001A82A7 /* UnicolorLabel.swift */,
 			);
 			path = Prefabs;
 			sourceTree = "<group>";
@@ -251,7 +248,6 @@
 				89D8F53328E08E1A0009679A /* SwiftgramApp.swift in Sources */,
 				89ED9D12291E5B7800F6D98D /* JsonAgent.swift in Sources */,
 				8921199428E483AC00F20A6C /* Comment.swift in Sources */,
-				89821B4F2953D674001A82A7 /* UnicolorLabel.swift in Sources */,
 				89ED9D10291E4EE000F6D98D /* MapView.swift in Sources */,
 				898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */,
 				89DA86E129125A38001BB2BE /* Butler.swift in Sources */,

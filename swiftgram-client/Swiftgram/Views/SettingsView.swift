@@ -21,21 +21,18 @@ struct SettingsView: View {
                     NavigationLink {
                         AvatarSettings()
                     } label: {
-                        Image(systemName: "camera.aperture").padding(.trailing, 2)
-                        Text(NSLocalizedString("Modify avatar", comment: "Option in settings"))
+                        Label(NSLocalizedString("Modify avatar", comment: "Option in settings"), systemImage: "camera.aperture")
                     }
                     
                     NavigationLink {
                         BioSettings()
                     } label: {
-                        Image(systemName: "fleuron").padding(.trailing, 2)
-                        Text(NSLocalizedString("Modify description", comment: "Option in settings"))
+                        Label(NSLocalizedString("Modify description", comment: "Option in settings"), systemImage: "fleuron")
                     }
                     
                     Toggle(isOn: $privateProfile) {
                         HStack {
-                            Text(Image(systemName: "lock.shield")).padding(.trailing, 4)
-                            Text(NSLocalizedString("Private profile", comment: "Option in settings"))
+                            Label(NSLocalizedString("Private profile", comment: "Option in settings"), systemImage: "lock.shield")
                             Button {
                                 showPrivateProfileTooltip = true
                             } label: {
@@ -57,25 +54,22 @@ struct SettingsView: View {
                     NavigationLink {
                         NotificationsSettings()
                     } label: {
-                        Image(systemName: "bell.badge").padding(.trailing, 2)
-                        Text(NSLocalizedString("Notifcations", comment: "Option in settings"))
+                        Label(NSLocalizedString("Notifcations", comment: "Option in settings"), systemImage: "bell.badge")
                     }
                     
                     NavigationLink {
                         AppearanceSettings()
                     } label: {
-                        Image(systemName: "theatermask.and.paintbrush")
-                        Text(NSLocalizedString("Appearance", comment: "Option in settings")).padding(.horizontal, -1)
+                        Label(NSLocalizedString("Appearance", comment: "Option in settings"), systemImage: "theatermask.and.paintbrush")
                     }
                     
                     Button {
                         // ADD CACHE RESET FUNCTIONALITY HERE
                     } label: {
                         HStack {
-                            Image(systemName: "sdcard").padding(.horizontal, 3)
-                            Text(NSLocalizedString("Clear cache", comment: "Option in settings"))
+                            Label(NSLocalizedString("Clear cache", comment: "Option in settings"), systemImage: "sdcard")
                             Spacer()
-                            Text("\(NSLocalizedString("this will free ", comment: "Tooltip in settings for cache clear button")) ~\(cacheMemoryAmount) MB").font(.footnote).padding(.top, 3)
+                            Text("\(NSLocalizedString("this will free", comment: "E.g. this will free xy MB from the cache.")) \(cacheMemoryAmount)MB").font(.footnote).padding(.top, 3)
                         }.foregroundColor(.gray)
                     }
                     
@@ -86,17 +80,13 @@ struct SettingsView: View {
                     NavigationLink {
                         SecuritySettings()
                     } label: {
-                        Image(systemName: "key").padding(.horizontal, 4)
-                        Text(NSLocalizedString("Login and security", comment: "Option in settings"))
+                        Label(NSLocalizedString("Login and security", comment: "Option in settings"), systemImage: "key")
                     }
                     
                     Button {
                         // ADD ACCOUNT RESET FUNCTIONALITY HERE, ALERT FIRST!?
                     } label: {
-                        HStack {
-                            Image(systemName: "minus.diamond").padding(.trailing, 2)
-                            Text(NSLocalizedString("Delete account", comment: "Option in settings"))
-                        }.foregroundColor(.red)
+                        Label(NSLocalizedString("Delete account", comment: "Option in settings"), systemImage: "minus.diamond").foregroundColor(.red)
                     }
                 }
                 

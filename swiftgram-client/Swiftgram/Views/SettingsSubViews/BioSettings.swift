@@ -16,7 +16,7 @@ struct BioSettings: View {
     var body: some View {
         Form {
             Section {
-                TextField("Your bio goes here", text: $bioText)
+                TextField(NSLocalizedString("Your bio goes here", comment: "Tooltip in settings."), text: $bioText)
                     .onSubmit {
                         butler.saveSetting(key: "bioText", value: bioText)
                     }

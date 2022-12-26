@@ -36,10 +36,9 @@ struct SecuritySettings: View {
                         Button {
                             showEmailResetDialog = true
                         } label: {
-                            HStack {
-                                Image(systemName: emailOutOfTouch ? "arrow.triangle.2.circlepath" : "")
-                                    .foregroundColor(.indigo)
-                            }.foregroundColor(.red)
+                            Label("", systemImage: emailOutOfTouch ? "arrow.triangle.2.circlepath" : "")
+                                .labelStyle(.iconOnly)
+                                .foregroundColor(.indigo)
                         }.alert(isPresented: $showEmailResetDialog) {
                             Alert(
                                 title: Text(NSLocalizedString("Update email", comment: "Reset  password dialog header")),
@@ -62,8 +61,8 @@ struct SecuritySettings: View {
                 Text(NSLocalizedString("Email and password", comment: "Header in settings"))
             } footer: {
                     Text(emailOutOfTouch ?
-                         "To save your email adress, tap the refresh icon." :
-                            "Start typing to change your email adress."
+                         NSLocalizedString("To save your email adress, tap the refresh icon.", comment: "Tooltip in settings.") :
+                            NSLocalizedString("Start typing to change your email adress.", comment: "Tooltip in settings.")
                     )
             }
             
@@ -72,10 +71,8 @@ struct SecuritySettings: View {
                 Button {
                     showResetPasswordDialog = true
                 } label: {
-                    HStack {
-                        Image(systemName: "key").padding(.horizontal, 4)
-                        Text("Reset password")
-                    }.foregroundColor(.red)
+                    Label(NSLocalizedString("Reset password", comment: "Button in settings."), systemImage: "key")
+                        .foregroundColor(.red)
                 }.alert(isPresented: $showResetPasswordDialog) {
                     Alert(
                                 title: Text(NSLocalizedString("Reset password", comment: "Reset  password dialog header")),
