@@ -27,7 +27,6 @@ struct ImagePost: View {
     let avatarSize: CGFloat = 45
     let imageSize: CGFloat = 350
     let cornerRounding: CGFloat = 15
-    let butler: Butler = .init()
 
     @AppStorage("AppTheme") private var appTheme = "BaseTheme"
 
@@ -121,7 +120,7 @@ struct ImagePost: View {
                         .font(.system(size: 18, weight: .semibold))
                 })
 
-                Text(String(butler.formatMetricUInt(number: likeCount)) + " " + NSLocalizedString("Likes", comment: ""))
+                Text(likeCount.formatSGMetric() + " " + NSLocalizedString("Likes", comment: ""))
                     .font(.system(size: 15, weight: .semibold))
 
                 Spacer()

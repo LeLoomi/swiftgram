@@ -25,7 +25,6 @@ struct ProfileView: View {
     @State var showPrivateProfilePopover = false
     
     @AppStorage("AppTheme") private var appTheme = "BaseTheme"
-    let butler: Butler = .init() // We use our butler for number formatting
 
     // local style variables
     let textSize: CGFloat = 15
@@ -118,7 +117,7 @@ struct ProfileView: View {
                 Spacer()
 
                 VStack {
-                    Text(butler.formatMetricUInt(number: postCount))
+                    Text(postCount.formatSGMetric())
                         .font(.system(size: textSize + 10, weight: .semibold))
                     Text(NSLocalizedString("Posts", comment: "")).font(.system(size: textSize))
                 }
@@ -126,7 +125,7 @@ struct ProfileView: View {
                 Spacer()
 
                 VStack {
-                    Text(butler.formatMetricUInt(number: followingCount))
+                    Text(followingCount.formatSGMetric())
                         .font(.system(size: textSize + 10, weight: .semibold))
                     Text(NSLocalizedString("Following", comment: "")).font(.system(size: textSize))
                 }
@@ -134,7 +133,7 @@ struct ProfileView: View {
                 Spacer()
 
                 VStack {
-                    Text(String(butler.formatMetricUInt(number: followerCount)))
+                    Text(followerCount.formatSGMetric())
                         .font(.system(size: textSize + 10, weight: .semibold))
                     Text(NSLocalizedString("Followers", comment: "")).font(.system(size: textSize))
                 }
