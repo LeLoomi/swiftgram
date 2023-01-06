@@ -8,48 +8,45 @@
 import SwiftUI
 
 struct NotificationsSettings: View {
-    let butler = Butler()
-    
     @AppStorage("enableNotifications") private var enableNotifcations: Bool = true
+    @AppStorage("notifyNewFollower") private var notifyNewFollower: Bool = true
+    @AppStorage("notifyNewLike") private var notifyNewLike: Bool = true
+    @AppStorage("notifyNewComment") private var notifyNewComment: Bool = true
     
-    @AppStorage("notifyNewFollower") private var newFollower: Bool = true
-    @AppStorage("notifyNewLike") private var newLike: Bool = true
-    @AppStorage("notifyNewComment") private var newComment: Bool = true
-    
-    @AppStorage("notifyNewDevice") private var newDevice: Bool = true
+    @AppStorage("notifyNewDevice") private var notifyNewDevice: Bool = true
     
     var body: some View {
         Form {
             Section {
                 Toggle(NSLocalizedString("Enable notifications", comment: "Notification setting"), isOn: $enableNotifcations)
                     .onChange(of: $enableNotifcations.wrappedValue, perform: { _ in
-                        butler.saveSetting(key: "enableNotifications", value: enableNotifcations)
+                        enableNotifcations.saveInUserDefaults(key: "enableNotifications")
                     })
             }
             
             Section {
-                Toggle(NSLocalizedString("New follower", comment: "Notification setting"), isOn: $newFollower)
-                    .onChange(of: $newFollower.wrappedValue, perform: { _ in
-                        butler.saveSetting(key: "notifyNewFollower", value: newFollower)
+                Toggle(NSLocalizedString("New follower", comment: "Notification setting"), isOn: $notifyNewFollower)
+                    .onChange(of: $notifyNewFollower.wrappedValue, perform: { _ in
+                        notifyNewFollower.saveInUserDefaults(key: "notifyNewFollower")
                     })
                 
-                Toggle(NSLocalizedString("New like", comment: "Notification setting"), isOn: $newLike)
-                    .onChange(of: $newLike.wrappedValue, perform: { _ in
-                        butler.saveSetting(key: "notifyNewLike", value: newLike)
+                Toggle(NSLocalizedString("New like", comment: "Notification setting"), isOn: $notifyNewLike)
+                    .onChange(of: $notifyNewLike.wrappedValue, perform: { _ in
+                        notifyNewLike.saveInUserDefaults(key: "notifyNewLike")
                     })
                 
-                Toggle(NSLocalizedString("New comment", comment: "Notification setting"), isOn: $newComment)
-                    .onChange(of: $newFollower.wrappedValue, perform: { _ in
-                        butler.saveSetting(key: "notifyNewComment", value: newComment)
+                Toggle(NSLocalizedString("New comment", comment: "Notification setting"), isOn: $notifyNewComment)
+                    .onChange(of: $notifyNewFollower.wrappedValue, perform: { _ in
+                        notifyNewComment.saveInUserDefaults(key: "notifyNewComment")
                     })
             } header: {
                 Text(NSLocalizedString("App", comment: "Section in notification setttings"))
             }.disabled(!enableNotifcations)
             
             Section {
-                Toggle(NSLocalizedString("New device login", comment: "Notification setting"), isOn: $newDevice)
-                    .onChange(of: $newDevice.wrappedValue, perform: { _ in
-                        butler.saveSetting(key: "notifyNewDevice", value: newDevice)
+                Toggle(NSLocalizedString("New device login", comment: "Notification setting"), isOn: $notifyNewDevice)
+                    .onChange(of: $notifyNewDevice.wrappedValue, perform: { _ in
+                        notifyNewDevice.saveInUserDefaults(key: "notifyNewDevice")
                     })
                 
             } header: {

@@ -4,11 +4,12 @@
 //
 //  Created by Eliah Lohr on 02.11.22.
 //
-//  This class is a servie class. It hold "miscellaneous" functionality like numbers formatting etc.
+//  This file provides service functionality. It hold "miscellaneous" stuff like numbers formatting etc.
 
 import Foundation
 
 // We extend Int etc to make the functionality available without butler instances
+// make available to SingedInteger / Int type instead of just UnsignedInt?
 extension UnsignedInteger {
     func formatSGMetric() -> String {
         
@@ -52,18 +53,20 @@ extension UnsignedInteger {
     }
 }
 
-struct Butler {
-    // Our user default save functions
-    public func saveSetting(key: String, value: String) {
-        UserDefaults.standard.set(value, forKey: key)
+extension String {
+    public func saveInUserDefaults(key:String) {
+        UserDefaults.standard.set(self, forKey: key)
     }
-    
-    public func saveSetting(key: String, value: Int) {
-        UserDefaults.standard.set(value, forKey: key)
+}
+
+extension Int {
+    public func saveInUserDefaults(key:String) {
+        UserDefaults.standard.set(self, forKey: key)
     }
-    
-    public func saveSetting(key: String, value: Bool) {
-        UserDefaults.standard.set(value, forKey: key)
+}
+
+extension Bool {
+    public func saveInUserDefaults(key:String) {
+        UserDefaults.standard.set(self, forKey: key)
     }
-    
 }

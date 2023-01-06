@@ -14,8 +14,6 @@ struct AppearanceSettings: View {
     @AppStorage("AppThemeIndex") private var appThemeIndex = 0
 
     @State var colorModeIndex = 0
-
-    let butler = Butler()
     
     var body: some View {
         NavigationView {
@@ -41,8 +39,8 @@ struct AppearanceSettings: View {
                         .labelsHidden()
                         // Saving the theme when a new one is selected
                         .onChange(of: $appThemeIndex.wrappedValue, perform: { _ in
-                            butler.saveSetting(key: "AppTheme", value: themes[appThemeIndex])
-                            butler.saveSetting(key: "AppThemeIndex", value: appThemeIndex)
+                            themes[appThemeIndex].saveInUserDefaults(key: "AppTheme")
+                            appThemeIndex.saveInUserDefaults(key: "AppThemeIndex")
                         })
                 }
             }
