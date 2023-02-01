@@ -55,18 +55,18 @@ extension UnsignedInteger {
 
 extension String {
     public func saveInUserDefaults(key:String) {
-        UserDefaults.standard.set(self, forKey: key)
+        //UserDefaults.standard.set(self, forKey: key)
     }
 }
 
 extension Int {
     public func saveInUserDefaults(key:String) {
-        UserDefaults.standard.set(self, forKey: key)
+        //UserDefaults.standard.set(self, forKey: key)
     }
 }
 
 extension Bool {
     public func saveInUserDefaults(key:String) {
-        UserDefaults.standard.set(self, forKey: key)
+        //UserDefaults.standard.set(self, forKey: key)
     }
 }

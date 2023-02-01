@@ -152,16 +152,15 @@ struct ProfileView: View {
 
             ScrollView {
                 LazyVGrid(columns: columns, alignment: .center, spacing: 15) {
-                    ProfileImageTile(contentUrl: "https://i.ibb.co/thp8tmS/temple.jpg")
-                    ProfileImageTile(contentUrl: "https://i.ibb.co/3rmGmdC/skyline.png")
-                    ProfileImageTile(contentUrl: "https://i.ibb.co/RHZBNG8/bikes.png")
-                    ProfileImageTile(contentUrl: "https://i.ibb.co/bKX0knS/leafes.png")
-                    ProfileImageTile(contentUrl: "https://i.ibb.co/pRv8Nm6/river.png")
+                    ImageTile(contentUrl: "https://i.ibb.co/thp8tmS/temple.jpg")
+                    ImageTile(contentUrl: "https://i.ibb.co/3rmGmdC/skyline.png")
+                    ImageTile(contentUrl: "https://i.ibb.co/RHZBNG8/bikes.png")
+                    ImageTile(contentUrl: "https://i.ibb.co/bKX0knS/leafes.png")
+                    ImageTile(contentUrl: "https://i.ibb.co/pRv8Nm6/river.png")
                 }.padding(10)
             }
         }
         .foregroundColor(Color(appTheme + "/ContainerText"))
-        .padding(.bottom, 25)
         .frame(width: 370, alignment: .top)
         .background(alignment: .top) {
             Rectangle() // as long as paddings (.trailing/.vertical) are set correctly, the background will auto scale
@@ -172,7 +171,7 @@ struct ProfileView: View {
     }
 }
 
-struct OthersProfileView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView(isOurs: true, ownerName: "Si Luan Pham", isVerified: true, ownerAvatarUrl: "https://i.ibb.co/tDGTXmK/profile-picture.jpg", postCount: 5, followerCount: 153_600, followingCount: 342, profileBio: "Hi I'm Si Luan Pham, and this is my mockup profile description!", userIsFollowing: true, privateProfile: true)
     }

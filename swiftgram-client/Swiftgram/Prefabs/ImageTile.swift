@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileImageTile: View {
+struct ImageTile: View {
     var contentUrl: String = "none"
     var size: CGFloat = 100
 
@@ -17,6 +17,11 @@ struct ProfileImageTile: View {
     // used for now to show a mockup image, will be changed to use a post ID and server api
     init(contentUrl: String) {
         self.contentUrl = contentUrl
+    }
+    
+    init(contentUrl: String, size: CGFloat) {
+        self.contentUrl = contentUrl
+        self.size = size
     }
 
     var body: some View {
@@ -37,7 +42,7 @@ struct ProfileImageTile: View {
     }
 }
 
-struct ProfileImageTile_Previews: PreviewProvider {
+struct ImageTile_Previews: PreviewProvider {
     static var previews: some View {
         // ProfileImageTile(contentUrl: "https://i.ibb.co/YN3vmNr/toronto.jpg")
 

@@ -10,7 +10,8 @@
 		8907BE62292BC9F7000FDFDF /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8907BE61292BC9F7000FDFDF /* AppearanceSettings.swift */; };
 		890C9F5A2951C0E100FA616F /* SecuritySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890C9F592951C0E100FA616F /* SecuritySettings.swift */; };
 		890D2FF229261AD800B76C62 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890D2FF129261AD800B76C62 /* SettingsView.swift */; };
-		8914A85028E9893300BBDEB0 /* ProfileImageTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */; };
+		8914A85028E9893300BBDEB0 /* ImageTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914A84F28E9893300BBDEB0 /* ImageTile.swift */; };
+		89181519296A4A3C008757D5 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89181518296A4A3C008757D5 /* SearchResult.swift */; };
 		8921199228E44FD900F20A6C /* LocationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199128E44FD900F20A6C /* LocationBox.swift */; };
 		8921199428E483AC00F20A6C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8921199328E483AC00F20A6C /* Comment.swift */; };
 		892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892CF81828E0BA69005E7585 /* ImagePost.swift */; };
@@ -38,7 +39,8 @@
 		8907BE61292BC9F7000FDFDF /* AppearanceSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
 		890C9F592951C0E100FA616F /* SecuritySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritySettings.swift; sourceTree = "<group>"; };
 		890D2FF129261AD800B76C62 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTile.swift; sourceTree = "<group>"; };
+		8914A84F28E9893300BBDEB0 /* ImageTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTile.swift; sourceTree = "<group>"; };
+		89181518296A4A3C008757D5 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		8921199128E44FD900F20A6C /* LocationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBox.swift; sourceTree = "<group>"; };
 		8921199328E483AC00F20A6C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		892CF81828E0BA69005E7585 /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
@@ -151,9 +153,10 @@
 				892CF81828E0BA69005E7585 /* ImagePost.swift */,
 				8921199128E44FD900F20A6C /* LocationBox.swift */,
 				8921199328E483AC00F20A6C /* Comment.swift */,
-				8914A84F28E9893300BBDEB0 /* ProfileImageTile.swift */,
+				8914A84F28E9893300BBDEB0 /* ImageTile.swift */,
 				893EE19A290C3A0F0047A045 /* VerifiedCheckmark.swift */,
 				89ED9D0F291E4EE000F6D98D /* MapView.swift */,
+				89181518296A4A3C008757D5 /* SearchResult.swift */,
 			);
 			path = Prefabs;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89181519296A4A3C008757D5 /* SearchResult.swift in Sources */,
 				89D7EF1028FD41640049D122 /* SinglePostView.swift in Sources */,
 				892CF81928E0BA69005E7585 /* ImagePost.swift in Sources */,
 				8907BE62292BC9F7000FDFDF /* AppearanceSettings.swift in Sources */,
@@ -252,7 +256,7 @@
 				898DEB0428E0A2E800B68AB1 /* ProfileView.swift in Sources */,
 				89DA86E129125A38001BB2BE /* SGUtil.swift in Sources */,
 				89ED9D14291E5FF900F6D98D /* SGData.swift in Sources */,
-				8914A85028E9893300BBDEB0 /* ProfileImageTile.swift in Sources */,
+				8914A85028E9893300BBDEB0 /* ImageTile.swift in Sources */,
 				896FB7E92954C58500B198D9 /* BioSettings.swift in Sources */,
 				893EE19B290C3A0F0047A045 /* VerifiedCheckmark.swift in Sources */,
 				898DEB0228E0A29100B68AB1 /* InteractionsView.swift in Sources */,
