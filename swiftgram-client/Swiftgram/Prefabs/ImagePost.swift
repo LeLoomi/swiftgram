@@ -106,6 +106,7 @@ struct ImagePost: View {
                     if isLiked {
                         Image(systemName: "heart.fill")
                             .font(.system(size: 20, weight: .semibold))
+                            .foregroundColor(Color(appTheme + "/LikedHighlight"))
                     } else {
                         Image(systemName: "heart")
                             .font(.system(size: 20, weight: .semibold))
