@@ -11,6 +11,10 @@ struct Comment: View {
     var publisherName: String = "none"
     var content: String = "none"
 
+    let textSize: CGFloat = 15
+
+    @AppStorage("AppTheme") private var appTheme = "BaseTheme"
+
     init(publisherName: String, content: String) {
         self.publisherName = publisherName
         self.content = content
@@ -18,12 +22,13 @@ struct Comment: View {
 
     var body: some View {
         HStack {
+            // change name to be a button taking you to their profile
             Text(publisherName + " ").bold() +
                 Text(content)
             Spacer()
         }
-        .font(.system(size: 15))
-        .foregroundColor(Color("ContainerText"))
+        .font(.system(size: textSize))
+        .foregroundColor(Color(appTheme + "/ContainerText"))
         .padding(.horizontal, 20)
     }
 }

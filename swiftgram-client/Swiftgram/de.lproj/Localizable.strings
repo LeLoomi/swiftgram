@@ -1,0 +1,182 @@
+/* Section in notification settings
+   Section in settings */
+"Account" = "Konto";
+
+/* Section in notification setttings */
+"App" = "App";
+
+/* Header in settings */
+"App color mode" = "App Erscheinungsbild";
+
+/* Header in settings. */
+"App Theme" = "App Farbmodus";
+
+/* Option in settings */
+"Appearance" = "Erscheinungsbild";
+
+/* Section in settings */
+"Application" = "App";
+
+/* Theme name in settings */
+"Blue" = "Blau";
+
+/* Button in popup promt. */
+"Cancel" = "Abbrechen";
+
+/* Option in settings */
+"Clear cache" = "Cache leeren";
+
+/* Option in settings to set color mode. */
+"Dark" = "Dunkel";
+
+/* Option in settings */
+"Delete account" = "Konto löschen";
+
+/* No comment provided by engineer. */
+"Developed by Eliah Lohr - this project is purely educational." = "Entwickelt von Eliah Lohr - Swiftgram ist ein Lernprojekt.";
+
+/* No comment provided by engineer. */
+"Discover" = "Entdecken";
+
+/* Header in settings */
+"Email and password" = "E-Mail und Passwort";
+
+/* Notification setting */
+"Enable notifications" = "Benachrichtigungen aktivieren";
+
+/* No comment provided by engineer. */
+"Entry" = "Eintrag";
+
+/* No comment provided by engineer. */
+"ERROR: unexpected navbar index!" = "FEHLER: Navbar Index falsch!";
+
+/* No comment provided by engineer. */
+"Follow" = "Folgen";
+
+/* No comment provided by engineer. */
+"Followers" = "Gefolgte";
+
+/* No comment provided by engineer. */
+"Following" = "Gefolgt";
+
+/* Option in avatar settings */
+"From camera" = "Per Kamera";
+
+/* Option in avatar settings */
+"From gallery" = "Aus der Gallerie";
+
+/* Theme name in settings */
+"Grey" = "Grau";
+
+/* No comment provided by engineer. */
+"Interactions" = "Aktivität";
+
+/* Tooltip in bio settings */
+"Just hit submit on your keyboard to save." = "Drücke Enter auf deiner Tastatur zum speichern.";
+
+/* Option in settings to set color mode. */
+"Light" = "Hell";
+
+/* No comment provided by engineer. */
+"Likes" = "Likes";
+
+/* Option in settings */
+"Login and security" = "Login und Sicherheit";
+
+/* Option in settings */
+"Modify avatar" = "Bild anpassen";
+
+/* Option in settings */
+"Modify description" = "Bio ändern";
+
+/* No comment provided by engineer. */
+"my@email.de" = "my@email.de";
+
+/* Notification setting */
+"New comment" = "Neuer Kommentar";
+
+/* Notification setting */
+"New device login" = "Neuer Gerätelogin";
+
+/* Notification setting */
+"New follower" = "Neuer Follower";
+
+/* Notification setting */
+"New like" = "Neuer Like";
+
+/* Option in settings */
+"Notifcations" = "Benachrichtigungen";
+
+/* No comment provided by engineer. */
+"Posts" = "Posts";
+
+/* Option in settings */
+"Private profile" = "Privates Profil";
+
+/* Private profile explainer header */
+"Private profiles" = "Private Profile";
+
+/* Button in popup promt. */
+"Proceed" = "Weiter";
+
+/* Section in settings */
+"Profile" = "Profil";
+
+/* Option in avatar settings */
+"Remove my avatar" = "Avatar entfernen";
+
+/* Button in popup promt. */
+"Reset" = "Zurücksetzten";
+
+/* Button in settings.
+   Reset  password dialog header */
+"Reset password" = "Passwort zurücksetzen";
+
+/* Theme name in settings */
+"Standard" = "Standard";
+
+/* Tooltip in settings. */
+"Start typing to change your email adress." = "Beginne zu schreiben um deine Email zu ändern.";
+
+/* Option in settings to set color mode. */
+"System" = "System";
+
+/* No comment provided by engineer. */
+"Their identity has been verified by Swiftgram." = "Die Identität wurde von Swiftgram überprüft.";
+
+/* No comment provided by engineer. */
+"This profile is private." = "Dieses Profil is Privat.";
+
+/* No comment provided by engineer. */
+"This user is verified." = "Verifizierte Nutzer";
+
+/* E.g. this will free xy MB from the cache. */
+"this will free" = "das befreit";
+
+/* Tooltip in settings. */
+"To save your email adress, tap the refresh icon." = "Um deine Email zu speichern drücke auf das refresh icon.";
+
+/* Reset  password dialog header */
+"Update email" = "Email aktualisieren";
+
+/* No comment provided by engineer. */
+"upload page" = "";
+
+/* Theme name in settings */
+"Violet" = "Violet";
+
+/* No comment provided by engineer. */
+"You can only see the users posts if you have been manually approved by them." = "Du kannst die Posts der Person nur sehen, wenn sie dich freigeschalten hat.";
+
+/* Private profile explainer body */
+"You need to approve new followers before they gain access to your profile. \nPeople not following you will still see your name, avatar and bio." = "Du musst neue Follower bestätigen bevor sie deine Posts sehen. Andere können dennoch deinen Namen, Avatar und deine Bio sehen.";
+
+/* Email reset dialog body. */
+"You'll recieve a link on your new email. \nTo confirm your new email, you will have to enter your password." = "Du erhältst eine Email an die neue Adresse. Zum Bestätigen musst du dich einloggen. ";
+
+/* Pswd reset dialog body. */
+"You'll recieve a reset link by email. \nAfter the reset you will need to re-login on all devices." = "Du bekommst eine E-Mail mit einem Reset-Link. Du musst dich nach ändern überall neu einloggen.";
+
+/* Tooltip in settings. */
+"Your bio goes here" = "Hier steht deine Bio";
+
